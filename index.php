@@ -6,7 +6,7 @@ require __DIR__ . '/header.php';
 <main class="home-page">
     <section id="home" class="hero">
         <div class="hero-name">
-            NAZLI 
+            NAZLI EROGLU
         </div>
 
         <div class="hero-title">
