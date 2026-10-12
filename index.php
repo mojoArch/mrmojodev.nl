@@ -5,8 +5,15 @@ require __DIR__ . '/header.php';
 
 <main class="home-page">
     <section id="home" class="hero">
-        <div class="hero-name">
-            NAZLI EROGLU
+        <div class="hero-identity">
+            <h1 class="hero-name">NAZLI EROGLU</h1>
+            <img
+                class="hero-photo"
+                src="./images/me2.jpg"
+                alt="Nazli Eroglu"
+                width="240"
+                height="240"
+            >
         </div>
 
         <div class="hero-title">
@@ -58,6 +65,14 @@ require __DIR__ . '/header.php';
                     <span class="project-toggle">
                         <?= t('project_details') ?>
                     </span>
+                        <a
+        class="project-website"
+        href="https://jvisfotografie-nl.onrender.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <?= t('visit_website') ?> ↗
+    </a>
                 </span>
             </summary>
 
