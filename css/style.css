@@ -1857,16 +1857,17 @@ body .site-header .language-switch a[aria-current="true"] {
     text-align: left;
 }
 
+.hero .hero-intro,
 .hero .hero-profile {
     min-width: 0;
 }
 
-.hero .hero-profile .hero-title {
+.hero .hero-intro .hero-title {
     margin: 16px 0 0;
     font-size: clamp(0.75rem, 2.2vw, 2rem);
     font-weight: 900;
     line-height: 1.25;
-    text-align: right;
+    text-align: left;
 }
 
 .hero .hero-photo {

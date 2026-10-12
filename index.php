@@ -6,7 +6,10 @@ require __DIR__ . '/header.php';
 <main class="home-page">
     <section id="home" class="hero">
         <div class="hero-identity">
-            <h1 class="hero-name">NAZLI EROGLU</h1>
+            <div class="hero-intro">
+                <h1 class="hero-name">NAZLI EROGLU</h1>
+                <div class="hero-title">SOFTWARE DEVELOPER</div>
+            </div>
             <div class="hero-profile">
                 <img
                     class="hero-photo"
@@ -15,7 +18,6 @@ require __DIR__ . '/header.php';
                     width="360"
                     height="450"
                 >
-                <div class="hero-title">SOFTWARE DEVELOPER</div>
             </div>
         </div>
 
@@ -116,7 +118,7 @@ require __DIR__ . '/header.php';
 
         <div class="contact-simple-links">
             <a href="mailto:nazli.eroglux@gmail.com">
-                nazli.eroglux@gmail.com
+                nazli.eroglux@gmail.com↗
             </a>
 
             <a
@@ -124,7 +126,7 @@ require __DIR__ . '/header.php';
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                LinkedIn ↗
+                Linkedin↗
             </a>
         </div>
 
