@@ -7,18 +7,16 @@ require __DIR__ . '/header.php';
     <section id="home" class="hero">
         <div class="hero-identity">
             <h1 class="hero-name">NAZLI EROGLU</h1>
-            <img
-                class="hero-photo"
-                src="./images/me2.jpg"
-                alt="Nazli Eroglu"
-                width="240"
-                height="240"
-            >
-        </div>
-
-        <div class="hero-title">
-        SOFTWARE DEVELOPER
-            
+            <div class="hero-profile">
+                <img
+                    class="hero-photo"
+                    src="./images/me2.jpg"
+                    alt="Nazli Eroglu"
+                    width="360"
+                    height="450"
+                >
+                <div class="hero-title">SOFTWARE DEVELOPER</div>
+            </div>
         </div>
 
         <div class="hero-description">
