@@ -22,7 +22,10 @@ require __DIR__ . '/header.php';
         </div>
 
         <div class="hero-description">
-     Custom Websites | Databases | Backend | Hardware
+            <span>Custom Websites</span>
+            <span>Databases</span>
+            <span>Backend</span>
+            <span>Hardware</span>
         </div>
     </section>
 
@@ -84,10 +87,17 @@ require __DIR__ . '/header.php';
  <details class="project">
     <summary>
         <span class="project-image">
+            <?php if (is_file(__DIR__ . '/images/signalshark.jpg')): ?>
             <img
                 src="./images/signalshark.jpg"
                 alt="SignalShark ESP32 wireless scanner"
             >
+            <?php else: ?>
+            <span class="project-placeholder" aria-hidden="true">
+                <strong>SIGNALSHARK</strong>
+                <span>ESP32 · WIRELESS SCANNER</span>
+            </span>
+            <?php endif; ?>
         </span>
 
         <span class="project-name">SIGNALSHARK — AIRSPACE EXPLORER</span>
@@ -109,7 +119,6 @@ require __DIR__ . '/header.php';
 </section>
 
 
-    </div>
 <section id="contact" class="contact-section contact-simple">
     <div class="contact-simple-inner">
         <h2><?= t('contact') ?></h2>

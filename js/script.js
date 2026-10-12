@@ -26,7 +26,7 @@ const projects = document.querySelectorAll(".project");
 projects.forEach((project) => {
     const image = project.querySelector("img");
 
-    if (!image) return;
+    if (!image || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
     project.addEventListener("mouseenter", () => {
         gsap.to(image, {

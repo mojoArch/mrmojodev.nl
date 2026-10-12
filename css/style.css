@@ -1880,3 +1880,263 @@ body .site-header .language-switch a[aria-current="true"] {
     border: none;
     border-radius: 0;
 }
+
+.hero-description span + span::before {
+    content: " | ";
+}
+
+.home-page .project summary .project-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 300px;
+    padding: 24px;
+    background: #141414;
+    color: #fff;
+}
+
+.home-page .project-placeholder strong {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    letter-spacing: 0.04em;
+}
+
+.home-page .project summary .project-placeholder span {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #bdbdbd;
+}
+
+@media (max-width: 700px) {
+    body:has(.home-page) .site-header {
+        gap: 0;
+        padding: 8px 16px;
+    }
+
+    body:has(.home-page) .site-header .navbar {
+        min-height: 44px;
+        padding: 0;
+    }
+
+    body:has(.home-page) .site-header .nav-links {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 4px;
+    }
+
+    body:has(.home-page) .site-header .nav-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 8px 0;
+        font-size: clamp(0.75rem, 3.3vw, 0.9rem);
+    }
+
+    body:has(.home-page) .site-header .language-switch {
+        padding: 0;
+        gap: 0;
+    }
+
+    body:has(.home-page) .site-header .language-switch a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 8px;
+    }
+
+    .home-page .hero {
+        height: auto;
+        min-height: 0;
+        padding: 32px 20px 48px;
+        gap: 28px;
+    }
+
+    .home-page .hero .hero-identity {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        max-width: 480px;
+    }
+
+    .home-page .hero .hero-name {
+        max-width: 8ch;
+        font-size: clamp(3rem, 15vw, 4.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+    }
+
+    .home-page .hero .hero-intro .hero-title {
+        margin-top: 14px;
+        font-size: clamp(0.95rem, 3.8vw, 1.15rem);
+        line-height: 1.4;
+    }
+
+    .home-page .hero .hero-profile {
+        width: min(82%, 300px);
+        justify-self: end;
+    }
+
+    .home-page .hero-description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 16px;
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        color: #ddd;
+    }
+
+    .home-page .hero-description span + span::before {
+        content: none;
+    }
+
+    .home-page .about-stage {
+        min-height: min(620px, 85svh);
+        padding: 32px 0;
+        gap: 24px;
+    }
+
+    .home-page .about-statement {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+    }
+
+    .home-page .about-label,
+    .home-page .about-description {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .home-page .about-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .home-page .about-stage > div {
+        padding: 0 20px;
+    }
+
+    .home-page .about-stage a.cv {
+        display: inline-block;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        line-height: 1.6;
+        text-underline-offset: 4px;
+    }
+
+    .home-page .projects-section {
+        padding: 48px 20px;
+        min-height: 0;
+        text-align: left;
+    }
+
+    .home-page .projects-title {
+        margin-bottom: 28px;
+        font-size: 2.25rem;
+        text-align: left;
+    }
+
+    .home-page .projects-container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+    }
+
+    .home-page .project-image img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        filter: brightness(100%);
+    }
+
+    .home-page .project summary .project-placeholder {
+        min-height: 0;
+        aspect-ratio: 4 / 3;
+    }
+
+    .home-page .project .project-name {
+        margin-top: 16px;
+        font-size: clamp(1.25rem, 5.5vw, 1.65rem);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .home-page .project .project-info {
+        padding-top: 0;
+    }
+
+    .home-page .project .project-type,
+    .home-page .project .project-category {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        line-height: 1.65;
+    }
+
+    .home-page .project .project-toggle,
+    .home-page .project .project-details-label {
+        margin-top: 8px;
+        padding: 10px 0;
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .home-page .project .project-website {
+        margin: 8px 0 0;
+        padding: 12px 18px;
+        min-height: 44px;
+    }
+
+    .home-page .project-description {
+        padding: 18px;
+    }
+
+    .home-page .project-description p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .home-page .all-projects-button {
+        display: block;
+        width: 100%;
+        margin: 32px 0 0;
+        padding: 16px;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .home-page .contact-section.contact-simple {
+        padding: 40px 20px 24px;
+    }
+
+    .home-page .contact-simple h2 {
+        font-size: 1.75rem;
+        margin-bottom: 12px;
+    }
+
+    .home-page .contact-simple-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-top: 20px;
+    }
+
+    .home-page .contact-simple-links a {
+        min-height: 44px;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 0.95rem;
+    }
+
+    .home-page .contact-bottom {
+        margin-top: 24px;
+        padding-top: 16px;
+    }
+}
