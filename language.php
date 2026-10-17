@@ -188,6 +188,10 @@ $translations = [
     'en' => 'Visit website',
     'nl' => 'Bekijk website'
 ],
+'view_github' => [
+    'en' => 'View on GitHub',
+    'nl' => 'Bekijk op GitHub'
+],
 ]
 ;
 

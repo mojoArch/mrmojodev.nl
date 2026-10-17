@@ -9,14 +9,16 @@ $projects = [
         'photos' => array_map(static fn (int $number): string => "fotograaf{$number}.jpg", range(1, 8
         )),
         'technologies' => ['Laravel', 'PHP'],
-        'website' => 'https://jvisfotografie-nl.onrender.com/'
+        'website' => 'https://jvisfotografie-nl.onrender.com/',
+        'github' => 'https://github.com/mojoArch/jvisfotografie.nl.git'
     ],
     'nevanexis' => [
         'name' => 'NevaNexis',
         'description' => 'lawyer_description',
         'photos' => ['justitie.jpg', 'justitie2.png',],
         'technologies' => ['PHP'],
-        'website' => 'https://www.nevanexis.nl/'
+        'website' => 'https://www.nevanexis.nl/',
+        'github' => 'https://github.com/mojoArch/uwverblijfvergunning.git'
     ],
     'cyberdeck' => [
         'name' => 'CYBERDECK',
@@ -29,6 +31,7 @@ $projects = [
         'description' => 'signalshark_description',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6)),
         'technologies' => ['ESP32-S3', 'Python', 'C++', 'Arduino IDE', 'nRF24L01', 'APIs'],
+        'github' => 'https://github.com/mojoArch/SignalShark.git'
     ],
 ];
 
@@ -75,11 +78,18 @@ require __DIR__ . '/header.php';
                             <li><?= htmlspecialchars($technology, ENT_QUOTES, 'UTF-8') ?></li>
                         <?php endforeach; ?>
                     </ul>
-                    <?php if (!empty($project['website'])): ?>
-                        <a class="project-website" href="<?= htmlspecialchars($project['website'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">
-                            <?= t('visit_website') ?> ↗
-                        </a>
-                    <?php endif; ?>
+                    <div class="project-detail-actions">
+                        <?php if (!empty($project['website'])): ?>
+                            <a class="project-website" href="<?= htmlspecialchars($project['website'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">
+                                <?= t('visit_website') ?> <span class="project-action-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        <?php endif; ?>
+                        <?php if (!empty($project['github'])): ?>
+                            <a class="project-source-link" href="<?= htmlspecialchars($project['github'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">
+                                <?= t('view_github') ?> <span class="project-action-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </section>
