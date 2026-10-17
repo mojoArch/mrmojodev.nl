@@ -48,6 +48,10 @@ $translations = [
         'en' => 'Project details',
         'nl' => 'Projectbeschrijving'
     ],
+    'project_not_found' => [
+        'en' => 'This project could not be found.',
+        'nl' => 'Dit project is niet gevonden.'
+    ],
     'all_projects' => [
         'en' => 'VIEW ALL PROJECTS',
         'nl' => 'BEKIJK ALLE PROJECTEN'

@@ -1678,6 +1678,223 @@ a.project-website:focus-visible {
     outline: 2px solid #702d28;
     outline-offset: 4px;
 }
+
+/* Project cards, automatic previews, and their dedicated detail pages. */
+.projects-page .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 72px 40px;
+}
+
+.projects-page .project {
+    width: 100%;
+    min-width: 0;
+}
+
+.projects-page .project:nth-child(even) {
+    margin-top: 112px;
+}
+
+.project-preview-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-preview-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 8px;
+}
+
+.projects-page .project-image,
+.home-page .project-image {
+    display: block;
+    width: 100%;
+}
+
+.project-carousel {
+    overflow: hidden;
+}
+
+:is(.home-page, .projects-page) .project-carousel-track {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    transition: transform 800ms cubic-bezier(0.22, 0.7, 0.2, 1);
+    will-change: transform;
+}
+
+.project-carousel-track img {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-preview-link .project-name,
+.project-preview-link .project-type,
+.project-preview-link .project-toggle {
+    display: block;
+}
+
+.project-preview-link .project-name {
+    margin-top: 18px;
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+
+.project-preview-link .project-meta {
+    display: block;
+    margin-top: 10px;
+}
+
+.project-preview-link .project-type {
+    font-size: 1rem;
+}
+
+.project-preview-link .project-toggle {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.project-detail-page {
+    min-height: 100vh;
+    padding: 40px 24px 100px;
+    background: #eee8da;
+    color: #191919;
+}
+
+.project-detail-content {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+}
+
+.project-detail-back {
+    display: inline-block;
+    margin-bottom: 32px;
+    font-weight: 800;
+    text-underline-offset: 4px;
+}
+
+.project-detail-content > h1 {
+    margin: 0 0 40px;
+    font-size: clamp(2.3rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.project-detail-page .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-detail-page .project-gallery img {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    max-height: 620px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid #191919;
+}
+
+.project-detail-description {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(220px, 0.8fr);
+    gap: 60px;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #191919;
+}
+
+.project-detail-description h2 {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.project-detail-description p {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-technologies li {
+    padding: 9px 13px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-weight: 800;
+}
+
+.project-detail-tech .project-website {
+    margin-top: 24px;
+}
+
+body:has(.project-detail-page) {
+    background: #eee8da;
+    color: #191919;
+}
+
+body:has(.project-detail-page) .site-header {
+    background: #f5f1e8;
+}
+
+body:has(.project-detail-page) .navbar {
+    background: #f5f1e8;
+}
+
+@media (max-width: 700px) {
+    .projects-page .projects-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+
+    .projects-page .project:nth-child(even) {
+        margin-top: 24px;
+    }
+
+    .project-carousel-track img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .project-detail-page {
+        padding: 28px 20px 64px;
+    }
+
+    .project-detail-content > h1 {
+        margin-bottom: 28px;
+    }
+
+    .project-detail-page .project-gallery {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .project-detail-page .project-gallery img {
+        min-height: 0;
+    }
+
+    .project-detail-description {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        margin-top: 32px;
+    }
+}
 body:has(.projects-page) {
     background: #f5f1e8;
     color: #191919;

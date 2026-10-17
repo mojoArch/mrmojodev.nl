@@ -53,8 +53,8 @@ require __DIR__ . '/header.php';
     <h2 class="projects-title"><?= t('projects_title') ?></h2>
 
     <div class="projects-container">
-        <details class="project">
-            <summary>
+        <article class="project">
+            <a class="project-preview-link" href="./project-detail.php?project=jvis">
                 <span class="project-image project-carousel" data-project-carousel>
                     <span class="project-carousel-track">
                         <img src="./images/fotograaf.jpg" alt="Photography website preview">
@@ -64,10 +64,10 @@ require __DIR__ . '/header.php';
                 <span class="project-info">
                     <strong class="project-name">J.VIS PHOTOGRAPHY</strong>
                     <span class="project-type">LARAVEL — WEBSITE</span>
-                    <span class="project-toggle">
-                        <?= t('project_details') ?>
-                    </span>
-                        <a
+                    <span class="project-toggle"><?= t('project_details') ?> ↗</span>
+                </span>
+            </a>
+            <a
         class="project-website"
         href="https://jvisfotografie-nl.onrender.com/"
         target="_blank"
@@ -75,18 +75,10 @@ require __DIR__ . '/header.php';
     >
         <?= t('visit_website') ?> ↗
     </a>
-                </span>
-            </summary>
+        </article>
 
-            <div class="project-description">
-                <p><?= t('photography_description') ?></p>
-                <h3><?= t('technologies_used') ?></h3>
-                <ul class="project-technologies"><li>Laravel</li><li>PHP</li></ul>
-            </div>
-        </details>
-
- <details class="project">
-    <summary>
+ <article class="project">
+    <a class="project-preview-link" href="./project-detail.php?project=signalshark">
         <span class="project-image project-carousel" data-project-carousel>
             <span class="project-carousel-track">
                 <?php foreach (range(1, 6) as $photoNumber): ?>
@@ -101,26 +93,9 @@ require __DIR__ . '/header.php';
 
         <span class="project-name">SIGNALSHARK — AIRSPACE EXPLORER</span>
         <span class="project-category">ESP32-S3 | C++ | Arduino IDE | Wi-Fi | nRF24L01</span>
-        <span class="project-details-label">
-            <?= t('project_details') ?>
-        </span>
-    </summary>
-
-    <div class="project-expanded">
-    <div class="project-gallery" aria-label="SignalShark project photos">
-        <?php foreach (range(1, 6) as $photoNumber): ?>
-            <img src="./images/signalshark<?= $photoNumber ?>.jpg" alt="SignalShark project photo <?= $photoNumber ?> of 6" loading="lazy">
-        <?php endforeach; ?>
-    </div>
-    <div class="project-description">
-        <p><?= t('signalshark_description') ?></p>
-        <h3><?= t('technologies_used') ?></h3>
-        <ul class="project-technologies">
-            <li>ESP32-S3</li><li>C++</li><li>Arduino IDE</li><li>Wi-Fi</li><li>nRF24L01</li>
-        </ul>
-    </div>
-    </div>
-</details>
+        <span class="project-details-label"><?= t('project_details') ?> ↗</span>
+    </a>
+ </article>
     </div>
 
     <a href="/project.php" class="all-projects-button">
