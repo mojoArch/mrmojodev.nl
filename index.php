@@ -55,11 +55,10 @@ require __DIR__ . '/header.php';
     <div class="projects-container">
         <details class="project">
             <summary>
-                <span class="project-image">
-                    <img
-                        src="./images/fotograaf.jpg"
-                        alt="Photography website preview"
-                    >
+                <span class="project-image project-carousel" data-project-carousel>
+                    <span class="project-carousel-track">
+                        <img src="./images/fotograaf.jpg" alt="Photography website preview">
+                    </span>
                 </span>
 
                 <span class="project-info">
@@ -81,23 +80,23 @@ require __DIR__ . '/header.php';
 
             <div class="project-description">
                 <p><?= t('photography_description') ?></p>
+                <h3><?= t('technologies_used') ?></h3>
+                <ul class="project-technologies"><li>Laravel</li><li>PHP</li></ul>
             </div>
         </details>
 
  <details class="project">
     <summary>
-        <span class="project-image">
-            <?php if (is_file(__DIR__ . '/images/signalshark.jpg')): ?>
-            <img
-                src="./images/signalshark.jpg"
-                alt="SignalShark ESP32 wireless scanner"
-            >
-            <?php else: ?>
-            <span class="project-placeholder" aria-hidden="true">
-                <strong>SIGNALSHARK</strong>
-                <span>ESP32 · WIRELESS SCANNER</span>
+        <span class="project-image project-carousel" data-project-carousel>
+            <span class="project-carousel-track">
+                <?php foreach (range(1, 6) as $photoNumber): ?>
+                    <img
+                        src="./images/signalshark<?= $photoNumber ?>.jpg"
+                        alt="SignalShark project photo <?= $photoNumber ?> of 6"
+                        <?= $photoNumber > 1 ? 'loading="lazy"' : '' ?>
+                    >
+                <?php endforeach; ?>
             </span>
-            <?php endif; ?>
         </span>
 
         <span class="project-name">SIGNALSHARK — AIRSPACE EXPLORER</span>
@@ -107,8 +106,19 @@ require __DIR__ . '/header.php';
         </span>
     </summary>
 
+    <div class="project-expanded">
+    <div class="project-gallery" aria-label="SignalShark project photos">
+        <?php foreach (range(1, 6) as $photoNumber): ?>
+            <img src="./images/signalshark<?= $photoNumber ?>.jpg" alt="SignalShark project photo <?= $photoNumber ?> of 6" loading="lazy">
+        <?php endforeach; ?>
+    </div>
     <div class="project-description">
         <p><?= t('signalshark_description') ?></p>
+        <h3><?= t('technologies_used') ?></h3>
+        <ul class="project-technologies">
+            <li>ESP32-S3</li><li>C++</li><li>Arduino IDE</li><li>Wi-Fi</li><li>nRF24L01</li>
+        </ul>
+    </div>
     </div>
 </details>
     </div>

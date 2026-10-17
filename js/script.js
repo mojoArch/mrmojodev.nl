@@ -43,6 +43,23 @@ projects.forEach((project) => {
     });
 });
 
+// Project previews move through their photos automatically. Respect reduced-motion settings.
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("[data-project-carousel]").forEach((carousel) => {
+        const track = carousel.querySelector(".project-carousel-track");
+        const slides = track ? Array.from(track.querySelectorAll("img")) : [];
+
+        if (slides.length < 2) return;
+
+        let currentSlide = 0;
+        window.setInterval(() => {
+            if (document.hidden) return;
+            currentSlide = (currentSlide + 1) % slides.length;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }, 4000);
+    });
+}
+
   gsap.registerPlugin(ScrollTrigger);
 
   const aboutStage = document.querySelector(".about-stage");

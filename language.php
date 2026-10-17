@@ -60,6 +60,14 @@ $translations = [
     'en' => 'I built this website from scratch with PHP for NevaNexis, a legal adviser. The aim was to clearly present their services and make it easy for visitors to get in touch. This project gave me the chance to put what I have learned into practice for a real client.',
     'nl' => 'Deze website heb ik helemaal zelf gebouwd met PHP voor jurist NevaNexis. Het doel was om de diensten duidelijk te presenteren en het bezoekers makkelijk te maken om contact op te nemen. Met dit project kon ik wat ik heb geleerd in de praktijk toepassen voor een echte klant.'
 ],
+'cyberdeck_description' => [
+    'en' => 'A hands-on hardware project where I combine electronics with software. I built and tested the components as part of my interest in embedded systems.',
+    'nl' => 'Een praktisch hardwareproject waarin ik elektronica en software combineer. Ik heb de onderdelen gebouwd en getest vanuit mijn interesse in embedded systemen.'
+],
+'technologies_used' => [
+    'en' => 'TECHNOLOGIES USED',
+    'nl' => 'GEBRUIKTE TECHNIEKEN'
+],
     'contact_text' => [
         'en' => 'INTERESTED? GET IN TOUCH',
         'nl' => 'INTERESSE? NEEM CONTACT MET MIJ OP'

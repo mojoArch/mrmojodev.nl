@@ -1966,12 +1966,14 @@ body .site-header .language-switch a[aria-current="true"] {
         font-size: clamp(3rem, 15vw, 4.5rem);
         line-height: 0.98;
         letter-spacing: -0.04em;
+        text-align: right;
     }
 
     .home-page .hero .hero-intro .hero-title {
         margin-top: 14px;
         font-size: clamp(0.95rem, 3.8vw, 1.15rem);
         line-height: 1.4;
+        text-align: right;
     }
 
     .home-page .hero .hero-profile {
