@@ -69,8 +69,8 @@ $translations = [
     'nl' => 'Een praktisch hardwareproject waarin ik elektronica en software combineer. Ik heb de onderdelen gebouwd en getest vanuit mijn interesse in embedded systemen.'
 ],
 'technologies_used' => [
-    'en' => 'TECHNOLOGIES USED',
-    'nl' => 'GEBRUIKTE TECHNIEKEN'
+    'en' => 'TOOLS / LANGUAGES',
+    'nl' => 'BENODIGDHEDEN / TALEN'
 ],
     'contact_text' => [
         'en' => 'INTERESTED? GET IN TOUCH',

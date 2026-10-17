@@ -1684,7 +1684,18 @@ a.project-website:focus-visible {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
-    gap: 72px 40px;
+    width: 100%;
+    max-width: 1500px;
+    gap: 72px clamp(28px, 4vw, 64px);
+}
+
+.projects-page .projects-section {
+    padding: clamp(64px, 8vh, 100px) clamp(28px, 5vw, 88px) 120px;
+}
+
+.projects-page .projects-title {
+    margin-bottom: clamp(48px, 6vw, 88px);
+    font-size: clamp(3.5rem, 7vw, 6rem);
 }
 
 .projects-page .project {
@@ -1731,6 +1742,10 @@ a.project-website:focus-visible {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.projects-page .project-carousel-track img {
+    height: clamp(360px, 32vw, 520px);
 }
 
 .project-preview-link .project-name,
@@ -1867,9 +1882,17 @@ body:has(.project-detail-page) .navbar {
         margin-top: 24px;
     }
 
+    .projects-page .projects-section {
+        padding: 48px 20px 72px;
+    }
+
     .project-carousel-track img {
         height: auto;
         aspect-ratio: 4 / 3;
+    }
+
+    .projects-page .project-carousel-track img {
+        height: auto;
     }
 
     .project-detail-page {

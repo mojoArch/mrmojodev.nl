@@ -5,19 +5,19 @@ require __DIR__ . '/header.php';
 $projects = [
     [
         'id' => 'jvis', 'name' => 'J.VIS PHOTOGRAPHY', 'category' => 'LARAVEL — WEBSITE',
-        'photos' => ['fotograaf.jpg'], 'website' => 'https://jvisfotografie-nl.onrender.com/'
+        'photos' => [ 'fotograaf5.jpg', 'fotograaf2.jpg', 'fotograaf3.jpg', 'fotograaf4.jpg','fotograaf1.jpg', 'fotograaf6.jpg', 'fotograaf7.jpg', 'fotograaf8.jpg'], 'website' => 'https://jvisfotografie-nl.onrender.com/'
     ],
     [
         'id' => 'nevanexis', 'name' => 'NevaNexis', 'category' => 'PHP — WEBSITE',
-        'photos' => ['justitie.jpg'], 'website' => 'https://www.nevanexis.nl/'
+        'photos' => ['justitie2.png','justitie.jpg'], 'website' => 'https://www.nevanexis.nl/'
     ],
     [
         'id' => 'cyberdeck', 'name' => 'CYBERDECK', 'category' => 'HARDWARE',
-        'photos' => ['image.jpg']
+        'photos' => ['cyber.jpg', 'cyber1.jpg']
     ],
     [
         'id' => 'signalshark', 'name' => 'SIGNALSHARK — AIRSPACE EXPLORER',
-        'category' => 'ESP32-S3 — C++ — WIRELESS SCANNER',
+        'category' => 'ESP32-S3 | C++ | Python',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6))
     ],
 ];

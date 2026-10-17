@@ -6,28 +6,29 @@ $projects = [
     'jvis' => [
         'name' => 'J.VIS PHOTOGRAPHY',
         'description' => 'photography_description',
-        'photos' => ['fotograaf.jpg'],
+        'photos' => array_map(static fn (int $number): string => "fotograaf{$number}.jpg", range(1, 8
+        )),
         'technologies' => ['Laravel', 'PHP'],
         'website' => 'https://jvisfotografie-nl.onrender.com/'
     ],
     'nevanexis' => [
         'name' => 'NevaNexis',
         'description' => 'lawyer_description',
-        'photos' => ['justitie.jpg'],
+        'photos' => ['justitie.jpg', 'justitie2.png',],
         'technologies' => ['PHP'],
         'website' => 'https://www.nevanexis.nl/'
     ],
     'cyberdeck' => [
         'name' => 'CYBERDECK',
         'description' => 'cyberdeck_description',
-        'photos' => ['image.jpg'],
-        'technologies' => ['Electronics', 'Hardware']
+        'photos' => ['cyber.jpg', 'cyber1.jpg'],
+        'technologies' => ['Raspberry Pi', 'Monitor', 'case', 'USB-STICK']
     ],
     'signalshark' => [
         'name' => 'SIGNALSHARK — AIRSPACE EXPLORER',
         'description' => 'signalshark_description',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6)),
-        'technologies' => ['ESP32-S3', 'C++', 'Arduino IDE', 'Wi-Fi', 'nRF24L01']
+        'technologies' => ['ESP32-S3', 'Python', 'C++', 'Arduino IDE', 'nRF24L01', 'APIs'],
     ],
 ];
 

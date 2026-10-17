@@ -57,7 +57,13 @@ require __DIR__ . '/header.php';
             <a class="project-preview-link" href="./project-detail.php?project=jvis">
                 <span class="project-image project-carousel" data-project-carousel>
                     <span class="project-carousel-track">
-                        <img src="./images/fotograaf.jpg" alt="Photography website preview">
+                        <?php foreach (range(1, 6) as $photoNumber): ?>
+                    <img
+                        src="./images/fotograaf<?= $photoNumber ?>.jpg"
+                        alt="J.VIS PHOTOGRAPHY project photo <?= $photoNumber ?> of 6"
+                        <?= $photoNumber > 1 ? 'loading="lazy"' : '' ?>
+                    >
+                <?php endforeach; ?>
                     </span>
                 </span>
 
