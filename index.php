@@ -112,27 +112,34 @@ require __DIR__ . '/header.php';
 
 <section id="contact" class="contact-section contact-simple">
     <div class="contact-simple-inner">
-        <h2><?= t('contact') ?></h2>
-
-        <p><?= t('contact_simple_text') ?></p>
+        <div class="contact-simple-copy">
+            <h2><?= t('contact') ?></h2>
+            <p><?= t('contact_simple_text') ?></p>
+        </div>
 
         <div class="contact-simple-links">
-            <a href="mailto:nazli.eroglux@gmail.com">
-                nazli.eroglux@gmail.com↗
+            <a class="contact-link-card" href="mailto:nazli.eroglux@gmail.com">
+                <span class="contact-link-text">
+                    <span class="contact-link-label"><?= t('contact_email') ?></span>
+                    <strong>nazli.eroglux@gmail.com</strong>
+                </span>
+                <span class="contact-link-arrow" aria-hidden="true">↗</span>
             </a>
 
             <a
+                class="contact-link-card"
                 href="https://linkedin.com/in/nazli-eroglu-191baa370"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Linkedin↗
+                <span class="contact-link-text">
+                    <span class="contact-link-label">LinkedIn</span>
+                    <strong><?= t('contact_profile') ?></strong>
+                </span>
+                <span class="contact-link-arrow" aria-hidden="true">↗</span>
             </a>
         </div>
 
-        <footer class="contact-bottom">
-            © 2026 Nazli Eroglu
-        </footer>
     </div>
 </section>
 

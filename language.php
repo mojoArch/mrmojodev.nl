@@ -94,8 +94,8 @@ $translations = [
     ]
     ,
 'about_description' => [
-    'en' => "I'm a software developer focused on creative applications, backend development, databases and hardware.",
-    'nl' => 'Ik ben een softwareontwikkelaar met interesse in creatieve applicaties, backendontwikkeling, databases en hardware.'
+    'en' => "I'm a third-year Software Development student at Mediacollege Amsterdam. I enjoy making creative applications and learning how everything works behind the scenes, from backend code and databases to hardware. In my own projects, including an ESP32 project, I try out new techniques and build my skills step by step.",
+    'nl' => 'Ik ben derdejaars student Software Development aan het Mediacollege Amsterdam. Ik werk graag aan creatieve toepassingen en vind het interessant om te ontdekken hoe alles achter de schermen samenwerkt: van backend en databases tot hardware. In mijn eigen projecten, waaronder een ESP32-project, probeer ik nieuwe technieken uit en bouw ik mijn kennis stap voor stap verder op.'
 ],
 'about_cv_text' => [
     'en' => 'You can take a look at my CV to learn more about my experience.',
@@ -176,8 +176,12 @@ $translations = [
     'nl' => 'Bekijk mijn profiel'
 ],
 'contact_simple_text' => [
-'en' => 'Have a question about my work or an idea you’d like to discuss? Feel free to email me or connect with me on LinkedIn.',
-    'nl' => 'Heb je een vraag over mijn werk of een idee dat je wilt bespreken? Stuur me gerust een mail of neem contact op via LinkedIn.'
+    'en' => 'Have a question about my work, want to work together, or just want to say hello? Send me an email or a message on LinkedIn. I’d be happy to hear from you.',
+    'nl' => 'Heb je een vraag over mijn werk, wil je samenwerken of gewoon even kennismaken? Stuur me gerust een mail of een bericht via LinkedIn. Ik hoor graag van je.'
+],
+'contact_email' => [
+    'en' => 'EMAIL',
+    'nl' => 'E-MAIL'
 ],
 
 'visit_website' => [
