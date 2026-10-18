@@ -16,7 +16,7 @@ $projects = [
         'photos' => ['cyber.jpg', 'cyber1.jpg']
     ],
     [
-        'id' => 'signalshark', 'name' => 'SIGNALSHARK — AIRSPACE EXPLORER',
+        'id' => 'signalshark', 'name' => 'SIGNALSHARK —  IoT Radio & Aircraft Tracker',
         'category' => 'ESP32-S3 | C++ | Python',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6))
     ],
