@@ -65,8 +65,8 @@ $translations = [
     'nl' => 'Deze website heb ik helemaal zelf gebouwd met PHP voor jurist NevaNexis. Het doel was om de diensten duidelijk te presenteren en het bezoekers makkelijk te maken om contact op te nemen. Met dit project kon ik wat ik heb geleerd in de praktijk toepassen voor een echte klant.'
 ],
 'cyberdeck_description' => [
-    'en' => 'A hands-on hardware project where I combine electronics with software. I built and tested the components as part of my interest in embedded systems.',
-    'nl' => 'Een praktisch hardwareproject waarin ik elektronica en software combineer. Ik heb de onderdelen gebouwd en getest vanuit mijn interesse in embedded systemen.'
+    'en' => 'A personal passion project where I combine hardware with software. I built my own portable computer using a Raspberry Pi 5, a small screen, and a mini-keyboard. To challenge myself, I installed and configured Arch Linux completely from scratch using the terminal, which taught me a lot about package management, system settings, and getting hardware components to talk to software.The project is currently a work in progress, and I am actively learning more as I plan to expand the system with new hardware modules and custom tools.',
+    'nl' => 'Een persoonlijk passieproject waarin ik hardware met software combineer. Ik heb mijn eigen draagbare computer gebouwd met een Raspberry Pi 5, een klein scherm en een mini-toetsenbord. Om mezelf uit te dagen heb ik Arch Linux volledig vanaf nul geïnstalleerd en geconfigureerd via de terminal. Dit heeft me ontzettend veel geleerd over package management, systeeminstellingen en hoe je hardware-componenten laat communiceren met software. Het project is momenteel nog in ontwikkeling.ik leer hier actief van door terwijl ik plannen maak om het systeem uit te breiden met nieuwe hardware-modules en eigen tooling.'
 ],
 'technologies_used' => [
     'en' => 'TOOLS / LANGUAGES',

@@ -1,5 +1,13 @@
 <?php
 require_once __DIR__ . '/language.php';
+
+$languagePage = $_SERVER['PHP_SELF'] ?? '/';
+$englishQuery = $_GET;
+$englishQuery['lang'] = 'en';
+$dutchQuery = $_GET;
+$dutchQuery['lang'] = 'nl';
+$englishUrl = $languagePage . '?' . http_build_query($englishQuery);
+$dutchUrl = $languagePage . '?' . http_build_query($dutchQuery);
 ?>
 
 <!DOCTYPE html>
@@ -32,14 +40,14 @@ require_once __DIR__ . '/language.php';
 
     <nav class="language-switch" aria-label="Language / Taal">
         <a
-            href="?lang=en"
+            href="<?= htmlspecialchars($englishUrl, ENT_QUOTES, 'UTF-8') ?>"
             lang="en"
             aria-label="English"
             <?= $lang === 'en' ? 'aria-current="true"' : '' ?>
         >EN</a>
 
         <a
-            href="?lang=nl"
+            href="<?= htmlspecialchars($dutchUrl, ENT_QUOTES, 'UTF-8') ?>"
             lang="nl"
             aria-label="Nederlands"
             <?= $lang === 'nl' ? 'aria-current="true"' : '' ?>

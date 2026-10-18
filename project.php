@@ -12,7 +12,7 @@ $projects = [
         'photos' => ['justitie2.png','justitie.jpg'], 'website' => 'https://www.nevanexis.nl/'
     ],
     [
-        'id' => 'cyberdeck', 'name' => 'CYBERDECK', 'category' => 'HARDWARE',
+        'id' => 'cyberdeck', 'name' => 'Arch Linux Cyberdeck — Raspberry Pi ', 'category' => 'HARDWARE — SOFTWARE OS',
         'photos' => ['cyber.jpg', 'cyber1.jpg']
     ],
     [

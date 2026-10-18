@@ -2,6 +2,11 @@
 require_once __DIR__ . '/language.php';
 
 $projectId = $_GET['project'] ?? '';
+if (!is_string($projectId)) {
+    $projectId = '';
+}
+$projectId = strtolower(trim($projectId));
+$projectId = preg_replace('/[^a-z0-9]/', '', $projectId);
 $projects = [
     'jvis' => [
         'name' => 'J.VIS PHOTOGRAPHY',
@@ -30,7 +35,7 @@ $projects = [
         'name' => 'SIGNALSHARK — AIRSPACE EXPLORER',
         'description' => 'signalshark_description',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6)),
-        'technologies' => ['ESP32-S3', 'Python', 'C++', 'Arduino IDE', 'nRF24L01', 'APIs'],
+        'technologies' => ['ESP32-S3', 'Python', 'C++', 'Arduino IDE', 'nRF24L01', 'APIs', 'Seriële communicatie (CDC)', 'GPIO-pinouts'],
         'github' => 'https://github.com/mojoArch/SignalShark.git'
     ],
 ];
