@@ -13,7 +13,7 @@ $projects = [
         'description' => 'photography_description',
         'photos' => array_map(static fn (int $number): string => "fotograaf{$number}.jpg", range(1, 8
         )),
-        'technologies' => ['Laravel', 'PHP'],
+        'technologies' => ['Laravel', 'PHP', 'HTML | Blade', 'JavaScript', 'MySQL','GSAP', 'Laravel Sail', 'Docker','Composer', 'Render'],
         'website' => 'https://jvisfotografie-nl.onrender.com/',
         'github' => 'https://github.com/mojoArch/jvisfotografie.nl.git'
     ],
@@ -21,18 +21,18 @@ $projects = [
         'name' => 'NevaNexis',
         'description' => 'lawyer_description',
         'photos' => ['justitie.jpg', 'justitie2.png',],
-        'technologies' => ['PHP'],
+        'technologies' => ['PHP', 'Javascript', 'HTML / CSS', 'Python'],
         'website' => 'https://www.nevanexis.nl/',
         'github' => 'https://github.com/mojoArch/uwverblijfvergunning.git'
     ],
     'cyberdeck' => [
-        'name' => 'CYBERDECK',
+        'name' => 'Arch Linux Cyberdeck — Raspberry Pi ',
         'description' => 'cyberdeck_description',
         'photos' => ['cyber.jpg', 'cyber1.jpg'],
-        'technologies' => ['Raspberry Pi', 'Monitor', 'case', 'USB-STICK']
+        'technologies' => ['Raspberry Pi', 'Monitor', 'CLI/Terminal', 'Bootable USB','Arch Linux', 'Rasberry Pi OS', 'Pacman']
     ],
     'signalshark' => [
-        'name' => 'SIGNALSHARK — AIRSPACE EXPLORER',
+        'name' => 'SIGNALSHARK — IoT Radio & Aircraft Tracker',
         'description' => 'signalshark_description',
         'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6)),
         'technologies' => ['ESP32-S3', 'Python', 'C++', 'Arduino IDE', 'nRF24L01', 'APIs', 'Seriële communicatie (CDC)', 'GPIO-pinouts'],
