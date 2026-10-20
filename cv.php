@@ -61,13 +61,9 @@
 
       </a>
   </div>
-  <a
-      class="cv-download"
-      href="<?= $lang === 'nl' ? './documents/Nazli-Eroglu-CV-NL.pdf' : './documents/Nazli-Eroglu-CV-EN.pdf' ?>"
-      download
-  >
+  <button class="cv-download" type="button" onclick="window.print()">
       <?= t('cv_download') ?> ↓
-  </a>
+  </button>
   </div>
 
 

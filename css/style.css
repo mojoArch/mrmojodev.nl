@@ -504,18 +504,20 @@ overflow: hidden;
       justify-content: center;
       gap: 8px;
       padding: 16px 24px;
-      border: 2px solid #a61b06;
-      background: #a61b06;
+      border: 2px solid #b65c32;
+      background: #b65c32;
       color: #fff;
+      font: inherit;
       font-weight: 800;
       text-decoration: none;
+      cursor: pointer;
       transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
   }
 
   .cv-download:hover,
   .cv-download:focus-visible {
-      background: #861707;
-      border-color: #861707;
+      background: #914724;
+      border-color: #914724;
       color: #fff;
       transform: translateY(-2px);
   }
@@ -523,6 +525,78 @@ overflow: hidden;
   .cv-download:focus-visible {
       outline: 2px solid #191919;
       outline-offset: 4px;
+  }
+
+  @media print {
+      @page {
+          size: A4;
+          margin: 12mm;
+      }
+
+      html,
+      body,
+      body:has(.cv-page) {
+          background: #eee8da !important;
+          color: #191919 !important;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+      }
+
+      body:has(.cv-page) .site-header,
+      body:has(.cv-page) .site-footer,
+      .cv-actions {
+          display: none !important;
+      }
+
+      .cv-page {
+          min-height: 0 !important;
+          background: #eee8da !important;
+          color: #191919 !important;
+      }
+
+      .cv-section {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .cv-title {
+          margin: 0 0 12mm;
+          font-size: 52pt;
+      }
+
+      .cv-content {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+          align-items: center;
+          gap: 12mm;
+      }
+
+      .cv-image {
+          max-width: 62mm;
+          border-color: #191919 !important;
+      }
+
+      .cv-skills {
+          margin-top: 12mm;
+      }
+
+      .cv-skills table,
+      .cv-skills tr,
+      .cv-education,
+      .cv-language {
+          break-inside: avoid;
+          page-break-inside: avoid;
+      }
+
+      .cv-education,
+      .cv-language {
+          border-color: #191919 !important;
+      }
+
+      .cv-education .cv-learning img {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+      }
   }
     body:has(.cv-page) header,
   body:has(.cv-page) .navbar {
