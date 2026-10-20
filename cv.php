@@ -50,6 +50,7 @@
 
   </div>
 
+  <div class="cv-actions">
   <div class="cv-github">
       <a
           href="https://github.com/mojoArch"
@@ -59,6 +60,14 @@
           <?= t('cv_github') ?> ↗
 
       </a>
+  </div>
+  <a
+      class="cv-download"
+      href="<?= $lang === 'nl' ? './documents/Nazli-Eroglu-CV-NL.pdf' : './documents/Nazli-Eroglu-CV-EN.pdf' ?>"
+      download
+  >
+      <?= t('cv_download') ?> ↓
+  </a>
   </div>
 
 
@@ -140,4 +149,3 @@
   </main>
 
   <?php require 'footer.php'; ?>
-

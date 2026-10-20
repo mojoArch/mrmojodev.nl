@@ -145,6 +145,10 @@ I developed the website locally using Docker and Laravel Sail, then deployed it 
     'en' => 'CHECK MY GITHUB',
     'nl' => 'BEKIJK MIJN GITHUB'
 ],
+'cv_download' => [
+    'en' => 'DOWNLOAD CV',
+    'nl' => 'DOWNLOAD MIJN CV'
+],
 'cv_photo_alt' => [
     'en' => 'Portrait of Nazli Eroglu',
     'nl' => 'Portret van Nazli Eroglu'

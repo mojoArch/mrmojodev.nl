@@ -389,6 +389,14 @@ overflow: hidden;
   }
 
   .cv-github {
+      margin-top: 0;
+  }
+
+  .cv-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
       margin-top: 32px;
   }
 
@@ -488,6 +496,33 @@ overflow: hidden;
   .cv-page .cv-github a:focus-visible {
       background: #191919;
       color: #eee8da;
+  }
+
+  .cv-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 24px;
+      border: 2px solid #a61b06;
+      background: #a61b06;
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+  }
+
+  .cv-download:hover,
+  .cv-download:focus-visible {
+      background: #861707;
+      border-color: #861707;
+      color: #fff;
+      transform: translateY(-2px);
+  }
+
+  .cv-download:focus-visible {
+      outline: 2px solid #191919;
+      outline-offset: 4px;
   }
     body:has(.cv-page) header,
   body:has(.cv-page) .navbar {
