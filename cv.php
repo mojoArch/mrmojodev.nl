@@ -11,6 +11,12 @@
 <p><?= t('cv_intro') ?></p>
 <p><?= t('cv_student') ?></p>
 <p><?= t('cv_interests') ?></p>
+<p><?= t('cv_internship') ?></p>
+<p><?= t('cv_space_interest') ?></p>
+<div class="cv-contact">
+    <p><span><?= t('cv_phone') ?>:</span> <a href="tel:+31615678579">06-15678579</a></p>
+    <p><span><?= t('cv_email') ?>:</span> <a href="mailto:nazli.eroglux@gmail.com">nazli.eroglux@gmail.com</a></p>
+</div>
               </div>
 
               <div class="cv-image">
@@ -49,6 +55,28 @@
 </table>
 
   </div>
+
+  <section class="cv-projects" aria-labelledby="cv-projects-title">
+      <h2 id="cv-projects-title"><?= t('cv_projects') ?></h2>
+      <ul class="cv-project-list">
+          <li>
+              <h3>NevaNexis</h3>
+              <p><?= t('cv_project_nevanexis') ?></p>
+          </li>
+          <li>
+              <h3>J.VIS Photography</h3>
+              <p><?= t('cv_project_jvis') ?></p>
+          </li>
+          <li>
+              <h3>SignalShark</h3>
+              <p><?= t('cv_project_signalshark') ?></p>
+          </li>
+          <li>
+              <h3>Cyberdeck</h3>
+              <p><?= t('cv_project_cyberdeck') ?></p>
+          </li>
+      </ul>
+  </section>
 
   <div class="cv-actions">
   <div class="cv-github">

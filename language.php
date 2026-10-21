@@ -117,6 +117,42 @@ I developed the website locally using Docker and Laravel Sail, then deployed it 
     'en' => 'I enjoy working with software engineering, databases, backend development and hardware.',
     'nl' => 'Ik werk graag met softwareontwikkeling, databases, backendontwikkeling en hardware.'
 ],
+'cv_internship' => [
+    'en' => 'I am currently looking for an internship focused on backend development.',
+    'nl' => 'Ik zoek momenteel een stage waarin ik me kan richten op backendontwikkeling.'
+],
+'cv_space_interest' => [
+    'en' => 'I also have a strong interest in space exploration and would love to learn how software contributes to space research.',
+    'nl' => 'Ik ben ook erg geïnteresseerd in ruimteverkenning en wil graag leren hoe software bijdraagt aan ruimteonderzoek.'
+],
+'cv_phone' => [
+    'en' => 'Phone',
+    'nl' => 'Telefoon'
+],
+'cv_email' => [
+    'en' => 'Email',
+    'nl' => 'E-mail'
+],
+'cv_projects' => [
+    'en' => 'PROJECTS',
+    'nl' => 'PROJECTEN'
+],
+'cv_project_nevanexis' => [
+    'en' => 'Custom PHP website built for a legal adviser and real client.',
+    'nl' => 'PHP-website op maat, gebouwd voor een jurist en echte klant.'
+],
+'cv_project_jvis' => [
+    'en' => 'Photography portfolio website built with Laravel.',
+    'nl' => 'Fotografieportfoliowebsite gebouwd met Laravel.'
+],
+'cv_project_signalshark' => [
+    'en' => 'ESP32-S3 project for exploring wireless signals and tracking aircraft.',
+    'nl' => 'ESP32-S3-project om draadloze signalen te onderzoeken en vliegtuigen te volgen.'
+],
+'cv_project_cyberdeck' => [
+    'en' => 'Portable Raspberry Pi 5 computer running Arch Linux.',
+    'nl' => 'Draagbare Raspberry Pi 5-computer met Arch Linux.'
+],
 'cv_subject' => [
     'en' => 'Subject',
     'nl' => 'Onderdeel'
