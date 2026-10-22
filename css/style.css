@@ -1379,11 +1379,11 @@ overflow: hidden;
 }
 
 .cv-education .cv-learning {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 52px);
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: start;
+    gap: 12px;
 }
 
 .cv-education .cv-learning img {
@@ -1400,7 +1400,7 @@ overflow: hidden;
     }
 
     .cv-education .cv-learning {
-        justify-content: flex-start;
+        grid-template-columns: repeat(4, 52px);
     }
 }
 .cv-education-content,
@@ -3006,19 +3006,31 @@ body .site-header .language-switch a[aria-current="true"] {
     }
 
     .cv-education .cv-learning {
-        display: flex !important;
-        justify-content: flex-start !important;
-        flex-wrap: wrap !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, 9mm) !important;
+        justify-content: center !important;
+        align-items: center !important;
         gap: 3mm !important;
+    }
+
+    .cv-education .cv-technologies h3 {
+        text-align: center !important;
     }
 
     .cv-education .cv-learning img {
         width: 9mm !important;
         height: 9mm !important;
+        justify-self: center !important;
+        object-fit: contain !important;
     }
 
     .cv-flags {
-        justify-self: start !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 9mm) !important;
+        justify-self: center !important;
+        justify-items: center !important;
+        align-items: center !important;
+        gap: 3mm !important;
         font-size: 15pt !important;
     }
 
