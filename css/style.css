@@ -2858,3 +2858,177 @@ body .site-header .language-switch a[aria-current="true"] {
         padding: 16px 18px;
     }
 }
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 7mm;
+    }
+
+    html,
+    body,
+    body:has(.cv-page),
+    .cv-page {
+        width: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #eee8da !important;
+        color: #191919 !important;
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    body:has(.cv-page) .site-header,
+    body:has(.cv-page) .site-footer,
+    body:has(.cv-page) .cv-actions {
+        display: none !important;
+    }
+
+    .cv-section {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .cv-title {
+        margin: 0 0 6mm !important;
+        font-size: 42pt !important;
+        line-height: 1 !important;
+    }
+
+    .cv-content {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) 27mm !important;
+        align-items: start !important;
+        gap: 7mm !important;
+    }
+
+    .cv-column p,
+    .cv-contact p {
+        margin: 0 0 2mm !important;
+        font-size: 11pt !important;
+        line-height: 1.3 !important;
+    }
+
+    .cv-contact {
+        margin-top: 2mm !important;
+    }
+
+    .cv-image {
+        display: block !important;
+        width: 27mm !important;
+        max-width: 27mm !important;
+        margin: 0 !important;
+        justify-self: end !important;
+        border: 1px solid #191919 !important;
+    }
+
+    .cv-image img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4 / 5 !important;
+        object-fit: cover !important;
+    }
+
+    .cv-skills {
+        margin-top: 8mm !important;
+    }
+
+    .cv-skills th,
+    .cv-skills td {
+        padding: 8px 10px !important;
+        font-size: 10pt !important;
+        line-height: 1.3 !important;
+    }
+
+    .cv-projects {
+        margin-top: 8mm !important;
+    }
+
+    .cv-projects h2 {
+        margin: 0 0 4mm !important;
+        font-size: 15pt !important;
+    }
+
+    .cv-project-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 5mm 8mm !important;
+    }
+
+    .cv-project-list li {
+        padding-top: 2mm !important;
+        break-inside: avoid !important;
+    }
+
+    .cv-project-list h3 {
+        margin: 0 0 1mm !important;
+        font-size: 10pt !important;
+    }
+
+    .cv-project-list p {
+        margin: 0 !important;
+        font-size: 9pt !important;
+        line-height: 1.25 !important;
+    }
+
+    .cv-education,
+    .cv-language {
+        margin-top: 8mm !important;
+        padding-top: 4mm !important;
+        break-inside: avoid !important;
+    }
+
+    .cv-education h2,
+    .cv-language h2 {
+        margin: 0 0 3mm !important;
+        font-size: 15pt !important;
+    }
+
+    .cv-education-content,
+    .cv-language {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        align-items: center !important;
+        gap: 5mm !important;
+    }
+
+    .cv-education h3,
+    .cv-education p,
+    .cv-language p,
+    .cv-education .cv-technologies h3 {
+        margin: 0 0 2mm !important;
+        font-size: 10pt !important;
+        line-height: 1.25 !important;
+    }
+
+    .cv-education .cv-learning {
+        display: flex !important;
+        justify-content: flex-start !important;
+        flex-wrap: wrap !important;
+        gap: 3mm !important;
+    }
+
+    .cv-education .cv-learning img {
+        width: 9mm !important;
+        height: 9mm !important;
+    }
+
+    .cv-flags {
+        justify-self: start !important;
+        font-size: 15pt !important;
+    }
+
+    .cv-skills,
+    .cv-projects,
+    .cv-education,
+    .cv-language,
+    .cv-project-list li,
+    .cv-skills tr {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}
