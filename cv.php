@@ -39,8 +39,8 @@
         <tr>
             <th scope="row"><?= t('cv_web_tools') ?></th>
             <td>
-                PHP | JavaScript | MySQL | Docker | Linux |
-                Laravel | HTML | CSS
+                PHP | Python | JavaScript | MySQL | Docker | Linux |
+                Laravel | HTML | CSS  | Git
             </td>
         </tr>
 
