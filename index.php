@@ -98,7 +98,7 @@ require __DIR__ . '/header.php';
         </span>
 
         <span class="project-name">SIGNALSHARK — IoT Radio & Aircraft Tracker</span>
-        <span class="project-category">ESP32-S3 | C++ | Arduino IDE | Wi-Fi | nRF24L01</span>
+        <span class="project-category">ESP32-S3 | C++ | Python</span>
         <span class="project-details-label"><?= t('project_details') ?> ↗</span>
     </a>
  </article>
