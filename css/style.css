@@ -3183,6 +3183,262 @@ body:has(.contact-page) .site-header .navbar {
     }
 }
 
+/* Last-pass visibility and CV layout fixes. */
+body:has(.home-page) .site-header .nav-links a,
+body:has(.projects-page) .site-header .nav-links a,
+body:has(.cv-page) .site-header .nav-links a,
+body:has(.project-detail-page) .site-header .nav-links a,
+body:has(.contact-page) .site-header .nav-links a,
+body:has(.home-page) .site-header .language-switch a,
+body:has(.projects-page) .site-header .language-switch a,
+body:has(.cv-page) .site-header .language-switch a,
+body:has(.project-detail-page) .site-header .language-switch a,
+body:has(.contact-page) .site-header .language-switch a {
+    color: #ffede4 !important;
+}
+
+body:has(.home-page) .site-header .nav-links a:hover,
+body:has(.projects-page) .site-header .nav-links a:hover,
+body:has(.cv-page) .site-header .nav-links a:hover,
+body:has(.project-detail-page) .site-header .nav-links a:hover,
+body:has(.contact-page) .site-header .nav-links a:hover,
+body:has(.home-page) .site-header .language-switch a[aria-current="true"],
+body:has(.projects-page) .site-header .language-switch a[aria-current="true"],
+body:has(.cv-page) .site-header .language-switch a[aria-current="true"],
+body:has(.project-detail-page) .site-header .language-switch a[aria-current="true"],
+body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
+    color: #ff684b !important;
+}
+
+@media screen {
+    .cv-page {
+        background: #1b0d0a !important;
+        color: #ffede4 !important;
+    }
+
+    .cv-section {
+        width: min(100%, 1480px) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        padding: clamp(28px, 4vw, 60px) clamp(20px, 5vw, 76px) 80px !important;
+    }
+
+    .cv-title {
+        margin: 0 0 clamp(30px, 4vw, 56px) !important;
+        padding: 0 0 16px !important;
+        border: 0 !important;
+        border-bottom: 1px solid #654238 !important;
+        background: transparent !important;
+        color: #ffede4 !important;
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(6rem, 14vw, 12rem) !important;
+        letter-spacing: -0.085em !important;
+        line-height: 0.8 !important;
+        text-align: left !important;
+    }
+
+    .cv-content {
+        grid-template-columns: minmax(0, 1fr) clamp(180px, 22vw, 280px) !important;
+        align-items: start !important;
+        gap: clamp(26px, 5vw, 72px) !important;
+    }
+
+    .cv-column p,
+    .cv-contact p {
+        max-width: 68ch;
+        margin: 0 0 12px !important;
+        color: #ffede4 !important;
+        font-size: clamp(0.98rem, 1.1vw, 1.1rem) !important;
+        line-height: 1.65 !important;
+    }
+
+    .cv-image {
+        width: 100% !important;
+        max-width: 280px !important;
+        border: 1px solid #654238 !important;
+    }
+
+    .cv-skills,
+    .cv-projects,
+    .cv-education,
+    .cv-language {
+        margin-top: 48px !important;
+    }
+
+    .cv-projects h2,
+    .cv-education h2,
+    .cv-language h2 {
+        margin-bottom: 20px !important;
+        color: #ffede4 !important;
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(1.8rem, 3.4vw, 3.5rem) !important;
+        letter-spacing: -0.05em !important;
+    }
+
+    .cv-skills th,
+    .cv-skills td {
+        padding: 16px 20px !important;
+        border-color: #654238 !important;
+        background: #2b1712 !important;
+        color: #ffede4 !important;
+    }
+
+    .cv-skills thead th {
+        background: #ffede4 !important;
+        color: #1b0d0a !important;
+    }
+
+    .cv-project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 0 40px !important;
+    }
+
+    .cv-project-list li,
+    .cv-education,
+    .cv-language {
+        border-color: #654238 !important;
+    }
+
+    .cv-project-list h3,
+    .cv-project-list p,
+    .cv-education h3,
+    .cv-education p,
+    .cv-language p,
+    .cv-contact a {
+        color: #ffede4 !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cv-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cv-image {
+        width: min(100%, 250px) !important;
+        justify-self: start !important;
+    }
+
+    .cv-project-list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* One shared navbar size and spacing on every page. */
+body:has(.home-page) .site-header,
+body:has(.projects-page) .site-header,
+body:has(.cv-page) .site-header,
+body:has(.project-detail-page) .site-header,
+body:has(.contact-page) .site-header {
+    display: flex !important;
+    width: 100%;
+    min-height: 72px !important;
+    height: 72px !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    padding: 12px clamp(20px, 4vw, 64px) !important;
+}
+
+body:has(.home-page) .site-header .navbar,
+body:has(.projects-page) .site-header .navbar,
+body:has(.cv-page) .site-header .navbar,
+body:has(.project-detail-page) .site-header .navbar,
+body:has(.contact-page) .site-header .navbar {
+    display: flex !important;
+    width: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+body:has(.home-page) .site-header .nav-links,
+body:has(.projects-page) .site-header .nav-links,
+body:has(.cv-page) .site-header .nav-links,
+body:has(.project-detail-page) .site-header .nav-links,
+body:has(.contact-page) .site-header .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 0 clamp(18px, 2.4vw, 36px) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body:has(.home-page) .site-header .nav-links a,
+body:has(.projects-page) .site-header .nav-links a,
+body:has(.cv-page) .site-header .nav-links a,
+body:has(.project-detail-page) .site-header .nav-links a,
+body:has(.contact-page) .site-header .nav-links a,
+body:has(.home-page) .site-header .language-switch a,
+body:has(.projects-page) .site-header .language-switch a,
+body:has(.cv-page) .site-header .language-switch a,
+body:has(.project-detail-page) .site-header .language-switch a,
+body:has(.contact-page) .site-header .language-switch a {
+    display: inline-flex !important;
+    min-height: 36px !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+}
+
+body:has(.home-page) .site-header .language-switch,
+body:has(.projects-page) .site-header .language-switch,
+body:has(.cv-page) .site-header .language-switch,
+body:has(.project-detail-page) .site-header .language-switch,
+body:has(.contact-page) .site-header .language-switch {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin: 0 0 0 auto !important;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 760px) {
+    body:has(.home-page) .site-header,
+    body:has(.projects-page) .site-header,
+    body:has(.cv-page) .site-header,
+    body:has(.project-detail-page) .site-header,
+    body:has(.contact-page) .site-header {
+        min-height: 72px !important;
+        height: auto !important;
+        flex-wrap: wrap !important;
+        gap: 4px 14px !important;
+        padding: 10px 18px !important;
+    }
+
+    body:has(.home-page) .site-header .nav-links,
+    body:has(.projects-page) .site-header .nav-links,
+    body:has(.cv-page) .site-header .nav-links,
+    body:has(.project-detail-page) .site-header .nav-links,
+    body:has(.contact-page) .site-header .nav-links {
+        gap: 0 16px !important;
+    }
+
+    body:has(.home-page) .site-header .nav-links a,
+    body:has(.projects-page) .site-header .nav-links a,
+    body:has(.cv-page) .site-header .nav-links a,
+    body:has(.project-detail-page) .site-header .nav-links a,
+    body:has(.contact-page) .site-header .nav-links a,
+    body:has(.home-page) .site-header .language-switch a,
+    body:has(.projects-page) .site-header .language-switch a,
+    body:has(.cv-page) .site-header .language-switch a,
+    body:has(.project-detail-page) .site-header .language-switch a,
+    body:has(.contact-page) .site-header .language-switch a {
+        min-height: 32px !important;
+        font-size: 0.76rem !important;
+    }
+}
+
 @media screen {
     body:has(.home-page) .site-header .nav-links a,
     body:has(.projects-page) .site-header .nav-links a,
@@ -4740,5 +4996,141 @@ body:has(.contact-page) .site-header .navbar {
 
     .projects-page .project:nth-child(even) {
         margin-top: 0 !important;
+    }
+}
+
+/* Final overrides for readable navigation and a cleaner CV. */
+body:has(.home-page) .site-header .nav-links a,
+body:has(.projects-page) .site-header .nav-links a,
+body:has(.cv-page) .site-header .nav-links a,
+body:has(.project-detail-page) .site-header .nav-links a,
+body:has(.contact-page) .site-header .nav-links a,
+body:has(.home-page) .site-header .language-switch a,
+body:has(.projects-page) .site-header .language-switch a,
+body:has(.cv-page) .site-header .language-switch a,
+body:has(.project-detail-page) .site-header .language-switch a,
+body:has(.contact-page) .site-header .language-switch a {
+    color: #ffede4 !important;
+}
+
+body:has(.home-page) .site-header .nav-links a:hover,
+body:has(.projects-page) .site-header .nav-links a:hover,
+body:has(.cv-page) .site-header .nav-links a:hover,
+body:has(.project-detail-page) .site-header .nav-links a:hover,
+body:has(.contact-page) .site-header .nav-links a:hover,
+body:has(.home-page) .site-header .language-switch a[aria-current="true"],
+body:has(.projects-page) .site-header .language-switch a[aria-current="true"],
+body:has(.cv-page) .site-header .language-switch a[aria-current="true"],
+body:has(.project-detail-page) .site-header .language-switch a[aria-current="true"],
+body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
+    color: #ff684b !important;
+}
+
+@media screen {
+    .cv-section {
+        width: min(100%, 1480px) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        padding: clamp(28px, 4vw, 60px) clamp(20px, 5vw, 76px) 80px !important;
+    }
+
+    .cv-title {
+        margin: 0 0 42px !important;
+        padding: 0 0 16px !important;
+        border: 0 !important;
+        border-bottom: 1px solid #654238 !important;
+        background: transparent !important;
+        color: #ffede4 !important;
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(6rem, 14vw, 12rem) !important;
+        letter-spacing: -0.085em !important;
+        line-height: 0.8 !important;
+        text-align: left !important;
+    }
+
+    .cv-content {
+        grid-template-columns: minmax(0, 1fr) clamp(180px, 22vw, 280px) !important;
+        align-items: start !important;
+        gap: clamp(26px, 5vw, 72px) !important;
+    }
+
+    .cv-column p,
+    .cv-contact p {
+        max-width: 68ch;
+        margin: 0 0 12px !important;
+        color: #ffede4 !important;
+        font-size: clamp(0.98rem, 1.1vw, 1.1rem) !important;
+        line-height: 1.65 !important;
+    }
+
+    .cv-image {
+        width: 100% !important;
+        max-width: 280px !important;
+        border: 1px solid #654238 !important;
+    }
+
+    .cv-skills,
+    .cv-projects,
+    .cv-education,
+    .cv-language {
+        margin-top: 48px !important;
+    }
+
+    .cv-projects h2,
+    .cv-education h2,
+    .cv-language h2 {
+        margin-bottom: 20px !important;
+        color: #ffede4 !important;
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(1.8rem, 3.4vw, 3.5rem) !important;
+        letter-spacing: -0.05em !important;
+    }
+
+    .cv-skills th,
+    .cv-skills td {
+        padding: 16px 20px !important;
+        border-color: #654238 !important;
+        background: #2b1712 !important;
+        color: #ffede4 !important;
+    }
+
+    .cv-skills thead th {
+        background: #ffede4 !important;
+        color: #1b0d0a !important;
+    }
+
+    .cv-project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 0 40px !important;
+    }
+
+    .cv-project-list li,
+    .cv-education,
+    .cv-language {
+        border-color: #654238 !important;
+    }
+
+    .cv-project-list h3,
+    .cv-project-list p,
+    .cv-education h3,
+    .cv-education p,
+    .cv-language p,
+    .cv-contact a {
+        color: #ffede4 !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cv-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cv-image {
+        width: min(100%, 250px) !important;
+        justify-self: start !important;
+    }
+
+    .cv-project-list {
+        grid-template-columns: 1fr !important;
     }
 }
