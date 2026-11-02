@@ -36,6 +36,23 @@ $translations = [
         'en' => 'ABOUT ME',
         'nl' => 'OVER MIJ'
     ],
+    'hero_kicker' => [
+        'en' => 'LOCATED IN AMSTERDAM',
+        'nl' => 'GEVESTIGD IN AMSTERDAM'
+    ],
+    'hero_headline' => [
+        'en' => 'SOFTWARE ',
+        'nl' => 'SOFTWARE '
+    ],
+    'hero_subheadline' => [
+        'en' => 'DEVELOPER',
+        'nl' => 'DEVELOPER'
+    ],
+    'hero_focus' => [
+        'en' => 'BACKEND · HARDWARE · CUSTOM WEBSITES · DATABASES',
+        'nl' => 'BACKEND · HARDWARE · CREATIEVE WEBSITES · DATABASES'
+    ],
+
     'about_statement' => [
         'en' => 'From first idea to final build.',
         'nl' => 'Van eerste idee tot eindresultaat.'

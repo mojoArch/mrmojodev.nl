@@ -4,30 +4,51 @@ require __DIR__ . '/header.php';
 ?>
 
 <main class="home-page">
-    <section id="home" class="hero">
-        <div class="hero-identity">
-            <div class="hero-intro">
-                <h1 class="hero-name">NAZLI EROGLU</h1>
-                <div class="hero-title">SOFTWARE DEVELOPER</div>
-            </div>
-            <div class="hero-profile">
-                <img
-                    class="hero-photo"
-                    src="./images/me2.jpg"
-                    alt="Nazli Eroglu"
-                    width="360"
-                    height="450"
-                >
-            </div>
+    <section id="home" class="hero hero-creative">
+        <div class="creative-masthead">
+            <span class="creative-name">NAZLI EROGLU</span>
+            <span class="creative-kicker"><?= t('hero_kicker') ?></span>
         </div>
 
-        <div class="hero-description">
-            <span>Custom Websites</span>
-            <span>Databases</span>
-            <span>Backend</span>
-            <span>Hardware</span>
+        <div class="creative-headline" aria-label="<?= htmlspecialchars(t('hero_headline'), ENT_QUOTES, 'UTF-8') ?>">
+            <h1 class="creative-line creative-solid"><?= t('hero_headline') ?></h1>
+            <p class="creative-line creative-outline"><?= t('hero_subheadline') ?></p>
+        </div>
+
+        <div class="creative-footer">
+            <span class="creative-focus"><?= t('hero_focus') ?></span>
+            <img
+                class="creative-portrait"
+                src="./images/me2.jpg"
+                alt="Nazli Eroglu"
+                width="360"
+                height="450"
+            >
         </div>
     </section>
+
+
+<section class="profile-strip">
+    <div>
+        <span>ROLE</span>
+        <p>Software Developer</p>
+    </div>
+
+    <div>
+        <span>STUDYING</span>
+        <p>MediaCollege Amsterdam</p>
+    </div>
+
+    <div>
+        <span>FOCUS</span>
+        <p>Backend · Hardware · Custom Websites · Databases</p>
+    </div>
+
+    <div>
+        <span>LOOKING FOR</span>
+        <p>An internship</p>
+    </div>
+</section>
 
   <section id="about" class="about-section">
       <div class="about-stage">
@@ -109,39 +130,6 @@ require __DIR__ . '/header.php';
     </a>
 </section>
 
-
-<section id="contact" class="contact-section contact-simple">
-    <div class="contact-simple-inner">
-        <div class="contact-simple-copy">
-            <h2><?= t('contact') ?></h2>
-            <p><?= t('contact_simple_text') ?></p>
-        </div>
-
-        <div class="contact-simple-links">
-            <a class="contact-link-card" href="mailto:nazli.eroglux@gmail.com">
-                <span class="contact-link-text">
-                    <span class="contact-link-label"><?= t('contact_email') ?></span>
-                    <strong>nazli.eroglux@gmail.com</strong>
-                </span>
-                <span class="contact-link-arrow" aria-hidden="true">↗</span>
-            </a>
-
-            <a
-                class="contact-link-card"
-                href="https://linkedin.com/in/nazli-eroglu-191baa370"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <span class="contact-link-text">
-                    <span class="contact-link-label">LinkedIn</span>
-                    <strong><?= t('contact_profile') ?></strong>
-                </span>
-                <span class="contact-link-arrow" aria-hidden="true">↗</span>
-            </a>
-        </div>
-
-    </div>
-</section>
 
 </main>
 

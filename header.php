@@ -21,7 +21,7 @@ $dutchUrl = $languagePage . '?' . http_build_query($dutchQuery);
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 >
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20261102-5">
 </head>
 
 <body>
@@ -33,7 +33,7 @@ $dutchUrl = $languagePage . '?' . http_build_query($dutchQuery);
             <a href="/#home"><?= t('home') ?></a>
             <a href="/#about"><?= t('about') ?></a>
             <a href="/project.php"><?= t('work') ?></a>
-            <a href="/#contact"><?= t('contact') ?></a>
+            <a href="/contact.php"><?= t('contact') ?></a>
             <a href="/cv.php"><?= t('cv') ?></a>
         </div>
     </nav>
