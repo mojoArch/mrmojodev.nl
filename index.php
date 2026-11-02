@@ -17,13 +17,6 @@ require __DIR__ . '/header.php';
 
         <div class="creative-footer">
             <span class="creative-focus"><?= t('hero_focus') ?></span>
-            <img
-                class="creative-portrait"
-                src="./images/me2.jpg"
-                alt="Nazli Eroglu"
-                width="360"
-                height="450"
-            >
         </div>
     </section>
 

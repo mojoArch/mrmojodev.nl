@@ -20,7 +20,7 @@
               </div>
 
               <div class="cv-image">
-                  <img src="./images/me.jpg" alt="<?= t('cv_photo_alt') ?>">
+                  <img src="./images/me2.jpg" alt="<?= t('cv_photo_alt') ?>">
               </div>
           </div>
           <div class="cv-skills">
