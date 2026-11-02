@@ -3045,6 +3045,253 @@ body .site-header .language-switch a[aria-current="true"] {
     }
 }
 
+/* Keep the navigation and Work layout simple and consistent on every page. */
+body:has(.home-page) .site-header,
+body:has(.projects-page) .site-header,
+body:has(.cv-page) .site-header,
+body:has(.project-detail-page) .site-header,
+body:has(.contact-page) .site-header {
+    display: flex !important;
+    min-height: 76px;
+    align-items: center;
+    justify-content: flex-start !important;
+    gap: 24px;
+    padding: 14px clamp(20px, 4vw, 64px) !important;
+    border: 0 !important;
+    border-bottom: 1px solid #654238 !important;
+}
+
+body:has(.home-page) .site-header .navbar,
+body:has(.projects-page) .site-header .navbar,
+body:has(.cv-page) .site-header .navbar,
+body:has(.project-detail-page) .site-header .navbar,
+body:has(.contact-page) .site-header .navbar {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.site-header .nav-links {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    gap: clamp(14px, 2.2vw, 34px) !important;
+    margin: 0 !important;
+}
+
+.site-header .nav-links a,
+.site-header .language-switch a {
+    margin: 0 !important;
+    padding: 8px 0 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.04em;
+}
+
+.site-header .language-switch {
+    display: flex !important;
+    gap: 14px !important;
+    margin: 0 0 0 auto !important;
+}
+
+.projects-page .projects-section {
+    min-height: 0 !important;
+    padding: 24px clamp(22px, 5vw, 76px) 90px !important;
+}
+
+.projects-page .projects-title {
+    margin: 0 auto 28px !important;
+    padding: 0 0 16px !important;
+    font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+    font-size: clamp(8rem, 19vw, 23rem) !important;
+    font-stretch: condensed;
+    font-weight: 900 !important;
+    letter-spacing: -0.09em !important;
+    line-height: 0.78 !important;
+}
+
+.projects-page .projects-title h1 {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    letter-spacing: inherit !important;
+    line-height: inherit !important;
+}
+
+.projects-page .projects-container {
+    gap: 64px clamp(24px, 5vw, 76px) !important;
+}
+
+.projects-page .project:nth-child(even) {
+    margin-top: 54px !important;
+}
+
+.projects-page .project-image {
+    aspect-ratio: 1.22 / 1 !important;
+}
+
+.projects-page .project-carousel-track img {
+    height: 100% !important;
+}
+
+.projects-page .project-name {
+    font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+    font-size: clamp(1.8rem, 3.2vw, 3.4rem) !important;
+    letter-spacing: -0.045em !important;
+    line-height: 1 !important;
+}
+
+.projects-page .project .project-meta {
+    justify-content: flex-start !important;
+    margin-top: 14px !important;
+}
+
+@media (max-width: 760px) {
+    body:has(.home-page) .site-header,
+    body:has(.projects-page) .site-header,
+    body:has(.cv-page) .site-header,
+    body:has(.project-detail-page) .site-header,
+    body:has(.contact-page) .site-header {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        padding: 12px 18px !important;
+    }
+
+    .site-header .nav-links {
+        gap: 8px 16px !important;
+    }
+
+    .projects-page .projects-section {
+        padding: 30px 20px 64px !important;
+    }
+
+    .projects-page .projects-title {
+        margin-bottom: 28px !important;
+        font-size: clamp(6rem, 24vw, 11rem) !important;
+    }
+
+    .projects-page .projects-container {
+        gap: 40px !important;
+    }
+
+    .projects-page .project:nth-child(even) {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen {
+    body:has(.home-page) .site-header .nav-links a,
+    body:has(.projects-page) .site-header .nav-links a,
+    body:has(.cv-page) .site-header .nav-links a,
+    body:has(.project-detail-page) .site-header .nav-links a,
+    body:has(.contact-page) .site-header .nav-links a,
+    body:has(.home-page) .site-header .language-switch a,
+    body:has(.projects-page) .site-header .language-switch a,
+    body:has(.cv-page) .site-header .language-switch a,
+    body:has(.project-detail-page) .site-header .language-switch a,
+    body:has(.contact-page) .site-header .language-switch a {
+        color: #ffede4 !important;
+    }
+
+    body:has(.home-page) .site-header .nav-links a:hover,
+    body:has(.projects-page) .site-header .nav-links a:hover,
+    body:has(.cv-page) .site-header .nav-links a:hover,
+    body:has(.project-detail-page) .site-header .nav-links a:hover,
+    body:has(.contact-page) .site-header .nav-links a:hover,
+    body:has(.home-page) .site-header .language-switch a[aria-current="true"],
+    body:has(.projects-page) .site-header .language-switch a[aria-current="true"],
+    body:has(.cv-page) .site-header .language-switch a[aria-current="true"],
+    body:has(.project-detail-page) .site-header .language-switch a[aria-current="true"],
+    body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
+        color: #ff684b !important;
+    }
+
+    .cv-section {
+        padding: clamp(28px, 4vw, 60px) clamp(20px, 5vw, 76px) 80px !important;
+    }
+
+    .cv-title {
+        margin: 0 0 clamp(32px, 5vw, 68px) !important;
+        padding: 0 0 18px !important;
+        border: 0 !important;
+        border-bottom: 2px solid #654238 !important;
+        background: transparent !important;
+        color: #ffede4 !important;
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(7rem, 16vw, 15rem) !important;
+        font-weight: 900 !important;
+        letter-spacing: -0.09em !important;
+        line-height: 0.78 !important;
+        text-align: left !important;
+    }
+
+    .cv-content {
+        grid-template-columns: minmax(0, 1fr) clamp(190px, 24vw, 310px) !important;
+        align-items: start !important;
+        gap: clamp(28px, 6vw, 84px) !important;
+    }
+
+    .cv-column p,
+    .cv-contact p {
+        max-width: 70ch;
+        margin: 0 0 14px !important;
+        font-size: clamp(1rem, 1.2vw, 1.12rem) !important;
+        line-height: 1.65 !important;
+    }
+
+    .cv-image {
+        width: 100% !important;
+        max-width: 310px !important;
+        border: 1px solid #654238 !important;
+    }
+
+    .cv-image img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .cv-skills,
+    .cv-projects,
+    .cv-education,
+    .cv-language {
+        margin-top: clamp(42px, 6vw, 76px) !important;
+    }
+
+    .cv-projects h2,
+    .cv-education h2,
+    .cv-language h2 {
+        font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+        font-size: clamp(2rem, 4.2vw, 4.5rem) !important;
+        letter-spacing: -0.055em !important;
+        line-height: 0.95 !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cv-section {
+        padding: 26px 18px 54px !important;
+    }
+
+    .cv-title {
+        margin-bottom: 32px !important;
+        font-size: clamp(6rem, 25vw, 9rem) !important;
+    }
+
+    .cv-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cv-image {
+        width: min(100%, 260px) !important;
+        justify-self: start !important;
+    }
+}
+
 /* Homepage hero inspired by the supplied reference. */
 body:has(.home-page) .site-header {
     display: flex;
@@ -4049,5 +4296,449 @@ body:has(.projects-page) .site-header .language-switch a[aria-current="true"] {
 
     .projects-page .project-carousel-track img {
         height: 100%;
+    }
+}
+
+/* Shared dark visual system across every page. */
+body:has(.home-page),
+body:has(.projects-page),
+body:has(.cv-page),
+body:has(.project-detail-page),
+body:has(.contact-page) {
+    background: #1b0d0a !important;
+    color: #ffede4 !important;
+}
+
+body:has(.home-page) .site-header,
+body:has(.projects-page) .site-header,
+body:has(.cv-page) .site-header,
+body:has(.project-detail-page) .site-header,
+body:has(.contact-page) .site-header {
+    background: #1b0d0a !important;
+    color: #ffede4 !important;
+}
+
+.site-header .navbar,
+.site-header .language-switch {
+    background: transparent !important;
+    border-color: #ffede4 !important;
+    color: #ffede4 !important;
+}
+
+.site-header .nav-links a,
+.site-header .language-switch a {
+    color: #ffede4 !important;
+}
+
+.site-header .nav-links a:hover,
+.site-header .language-switch a:hover,
+.site-header .language-switch a[aria-current="true"] {
+    color: #ff684b !important;
+}
+
+.home-page,
+.home-page .profile-strip,
+.home-page .about-section,
+.home-page .projects-section,
+.projects-page,
+.projects-page .projects-section,
+.cv-page,
+.project-detail-page,
+.contact-page,
+.contact-page .contact-section {
+    background: #1b0d0a !important;
+    color: #ffede4 !important;
+}
+
+.home-page .profile-strip {
+    border-color: #654238 !important;
+}
+
+.home-page .profile-strip > div {
+    border-color: #654238 !important;
+}
+
+.home-page .profile-strip span,
+.home-page .about-label {
+    color: #ff684b !important;
+}
+
+.home-page .profile-strip p,
+.home-page .about-description,
+.contact-page .contact-simple-copy p {
+    color: #ffede4 !important;
+}
+
+.home-page .about-statement,
+.home-page .projects-title,
+.projects-page .projects-title,
+.cv-title,
+.cv-projects h2,
+.cv-education h2,
+.cv-language h2,
+.contact-page .contact-simple-copy h1,
+.project-detail-content > h1,
+.project-detail-description h2 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "DejaVu Sans Condensed", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.home-page .about-statement {
+    color: #ffede4 !important;
+    font-size: clamp(3.5rem, 9.5vw, 10rem) !important;
+    letter-spacing: -0.035em !important;
+    line-height: 0.9 !important;
+}
+
+.home-page .about-stage a.cv,
+.projects-page .project-name,
+.projects-page .project .project-meta,
+.cv-page,
+.project-detail-page,
+.contact-page {
+    color: #ffede4;
+}
+
+.projects-page .projects-title {
+    font-size: clamp(5rem, 14vw, 13rem) !important;
+}
+
+.projects-page .project-image,
+.project-detail-page .project-gallery img {
+    border-color: #ff684b !important;
+}
+
+.projects-page .project .project-type,
+.project-detail-description p,
+.project-detail-description h2,
+.project-detail-content > h1,
+.project-detail-back {
+    color: #ffede4 !important;
+}
+
+.project-detail-page {
+    padding: clamp(40px, 7vw, 96px) clamp(20px, 5vw, 76px) 100px !important;
+}
+
+.project-detail-content {
+    width: min(100%, 1450px) !important;
+}
+
+.project-detail-back {
+    margin-bottom: clamp(28px, 5vw, 64px) !important;
+    color: #ff684b !important;
+}
+
+.project-detail-content > h1 {
+    margin-bottom: clamp(30px, 5vw, 64px) !important;
+    font-size: clamp(3.5rem, 9vw, 9rem) !important;
+    letter-spacing: -0.025em;
+    line-height: 0.9 !important;
+}
+
+.project-detail-page .project-gallery {
+    gap: clamp(12px, 2vw, 24px) !important;
+}
+
+.project-detail-description {
+    border-color: #ff684b !important;
+}
+
+.project-detail-tech,
+.project-technologies li {
+    color: #ffede4 !important;
+}
+
+.project-technologies li {
+    border-color: #654238 !important;
+}
+
+.project-detail-actions a,
+.cv-actions .cv-github a,
+.cv-actions .cv-download {
+    border-color: #ff684b !important;
+}
+
+.project-detail-actions .project-website,
+.cv-actions .cv-download {
+    background: #a63720 !important;
+    color: #fff3eb !important;
+}
+
+.project-detail-actions .project-source-link,
+.cv-actions .cv-github a {
+    background: #ffede4 !important;
+    color: #1b0d0a !important;
+}
+
+.cv-page {
+    background: #1b0d0a !important;
+    color: #ffede4 !important;
+}
+
+.cv-title {
+    background: #2b1712 !important;
+    border-color: #ff684b !important;
+    color: #ffede4 !important;
+}
+
+.cv-column p,
+.cv-contact p,
+.cv-project-list p,
+.cv-education p,
+.cv-language p,
+.cv-contact a,
+.cv-project-list h3,
+.cv-education h3 {
+    color: #ffede4 !important;
+}
+
+.cv-skills th,
+.cv-skills td {
+    border-color: #654238 !important;
+    background: #2b1712 !important;
+    color: #ffede4 !important;
+}
+
+.cv-skills thead,
+.cv-skills thead th {
+    background: #ffede4 !important;
+    color: #1b0d0a !important;
+}
+
+.cv-project-list li,
+.cv-education,
+.cv-language {
+    border-color: #654238 !important;
+}
+
+.cv-image {
+    border-color: #ff684b !important;
+}
+
+.contact-page .contact-simple-links .contact-link-card {
+    border-color: #654238 !important;
+    background: #2b1712 !important;
+    color: #ffede4 !important;
+}
+
+.contact-page .contact-simple-links .contact-link-card:hover {
+    border-color: #ff684b !important;
+    background: #a63720 !important;
+    color: #fff3eb !important;
+}
+
+.home-page + .site-footer,
+.projects-page + .site-footer,
+.cv-page + .site-footer,
+.contact-page + .site-footer,
+.project-detail-page + .site-footer {
+    background: #1b0d0a !important;
+    color: #ffede4 !important;
+}
+
+@media (max-width: 760px) {
+    .project-detail-page .project-gallery {
+        grid-template-columns: 1fr !important;
+    }
+
+    .project-detail-content > h1 {
+        font-size: clamp(3rem, 13vw, 5.5rem) !important;
+    }
+}
+
+@media print {
+    body:has(.cv-page),
+    .cv-page {
+        background: #eee8da !important;
+        color: #191919 !important;
+    }
+
+    .cv-title {
+        background: #eee8da !important;
+        border-color: #191919 !important;
+        color: #191919 !important;
+    }
+
+    .cv-column p,
+    .cv-contact p,
+    .cv-project-list p,
+    .cv-education p,
+    .cv-language p,
+    .cv-contact a,
+    .cv-project-list h3,
+    .cv-education h3,
+    .cv-skills th,
+    .cv-skills td {
+        background: transparent !important;
+        color: #191919 !important;
+    }
+
+    .cv-skills thead,
+    .cv-skills thead th {
+        background: #191919 !important;
+        color: #eee8da !important;
+    }
+
+    .cv-project-list li,
+    .cv-education,
+    .cv-language,
+    .cv-image {
+        border-color: #191919 !important;
+    }
+}
+
+/* Final navigation and Work-page overrides. */
+body:has(.home-page) .site-header,
+body:has(.projects-page) .site-header,
+body:has(.cv-page) .site-header,
+body:has(.project-detail-page) .site-header,
+body:has(.contact-page) .site-header {
+    display: flex !important;
+    min-height: 72px;
+    align-items: center;
+    justify-content: flex-start !important;
+    padding: 12px clamp(20px, 4vw, 64px) !important;
+}
+
+body:has(.home-page) .site-header .navbar,
+body:has(.projects-page) .site-header .navbar,
+body:has(.cv-page) .site-header .navbar,
+body:has(.project-detail-page) .site-header .navbar,
+body:has(.contact-page) .site-header .navbar {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.site-header .nav-links {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: clamp(14px, 2.2vw, 34px) !important;
+    margin: 0 !important;
+}
+
+.site-header .nav-links a,
+.site-header .language-switch a {
+    margin: 0 !important;
+}
+
+.site-header .language-switch {
+    margin: 0 0 0 auto !important;
+}
+
+.projects-page .projects-section {
+    min-height: 0 !important;
+    padding-top: 24px !important;
+}
+
+.projects-page .projects-title {
+    margin-bottom: 28px !important;
+    font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+    font-size: clamp(8rem, 19vw, 23rem) !important;
+    letter-spacing: -0.09em !important;
+    line-height: 0.78 !important;
+}
+
+.projects-page .projects-title h1 {
+    font: inherit !important;
+    letter-spacing: inherit !important;
+    line-height: inherit !important;
+}
+
+.projects-page .projects-container {
+    gap: 56px clamp(24px, 5vw, 76px) !important;
+}
+
+.projects-page .project:nth-child(even) {
+    margin-top: 52px !important;
+}
+
+.projects-page .project-image {
+    aspect-ratio: 1.22 / 1 !important;
+}
+
+.projects-page .project-carousel-track img {
+    height: 100% !important;
+}
+
+.projects-page .project-name {
+    font-family: "DejaVu Sans Condensed", "Arial Narrow", sans-serif !important;
+    font-size: clamp(1.8rem, 3.2vw, 3.4rem) !important;
+    letter-spacing: -0.045em !important;
+    line-height: 1 !important;
+}
+
+.projects-page .project .project-meta {
+    justify-content: flex-start !important;
+}
+
+.projects-page .project-preview-link {
+    color: #ffede4 !important;
+}
+
+.projects-page .project-preview-link:hover .project-name {
+    color: #ff684b !important;
+}
+
+.projects-page .project .project-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid #ffede4;
+    border-radius: 999px;
+    color: #ffede4 !important;
+    text-decoration: none !important;
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.projects-page .project .project-toggle:hover {
+    border-color: #ff684b;
+    background: #ff684b;
+    color: #1b0d0a !important;
+}
+
+.projects-page .project-website {
+    display: inline-flex !important;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 18px !important;
+    border: 1px solid #a63720 !important;
+    border-radius: 999px !important;
+    background: #a63720 !important;
+    color: #fff3eb !important;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.projects-page .project-website:hover,
+.projects-page .project-website:focus-visible {
+    border-color: #ff684b !important;
+    background: #ff684b !important;
+    color: #1b0d0a !important;
+}
+
+@media (max-width: 760px) {
+    .projects-page .projects-section {
+        padding-top: 30px !important;
+    }
+
+    .projects-page .projects-title {
+        margin-bottom: 28px !important;
+        font-size: clamp(6rem, 24vw, 11rem) !important;
+    }
+
+    .projects-page .projects-container {
+        gap: 40px !important;
+    }
+
+    .projects-page .project:nth-child(even) {
+        margin-top: 0 !important;
     }
 }

@@ -21,7 +21,7 @@ $dutchUrl = $languagePage . '?' . http_build_query($dutchQuery);
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 >
-    <link rel="stylesheet" href="css/style.css?v=20261102-5">
+    <link rel="stylesheet" href="css/style.css?v=20261102-9">
 </head>
 
 <body>
