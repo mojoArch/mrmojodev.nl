@@ -3328,8 +3328,8 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 .site-header {
     display: flex !important;
     width: 100% !important;
-    min-height: 72px !important;
-    height: 72px !important;
+    min-height: 80px !important;
+    height: 80px !important;
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 24px !important;
@@ -3359,11 +3359,11 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 .site-header .nav-links a,
 .site-header .language-switch a {
     display: inline-flex !important;
-    min-height: 36px !important;
+    min-height: 44px !important;
     align-items: center !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 0.82rem !important;
+    font-size: 0.95rem !important;
     line-height: 1 !important;
 }
 
@@ -3390,8 +3390,8 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 
     .site-header .nav-links a,
     .site-header .language-switch a {
-        min-height: 32px !important;
-        font-size: 0.76rem !important;
+        min-height: 36px !important;
+        font-size: 0.82rem !important;
     }
 }
 
@@ -3440,8 +3440,8 @@ body:has(.project-detail-page) .site-header,
 body:has(.contact-page) .site-header {
     display: flex !important;
     width: 100%;
-    min-height: 72px !important;
-    height: 72px !important;
+    min-height: 80px !important;
+    height: 80px !important;
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 24px !important;
@@ -3490,11 +3490,11 @@ body:has(.cv-page) .site-header .language-switch a,
 body:has(.project-detail-page) .site-header .language-switch a,
 body:has(.contact-page) .site-header .language-switch a {
     display: inline-flex !important;
-    min-height: 36px !important;
+    min-height: 44px !important;
     align-items: center !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 0.82rem !important;
+    font-size: 0.95rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
 }
@@ -3542,8 +3542,8 @@ body:has(.contact-page) .site-header .language-switch {
     body:has(.cv-page) .site-header .language-switch a,
     body:has(.project-detail-page) .site-header .language-switch a,
     body:has(.contact-page) .site-header .language-switch a {
-        min-height: 32px !important;
-        font-size: 0.76rem !important;
+        min-height: 36px !important;
+        font-size: 0.82rem !important;
     }
 }
 
@@ -3863,16 +3863,21 @@ body:has(.home-page) .site-header .language-switch a[aria-current="true"] {
     }
 
     .creative-headline {
-        font-size: clamp(3.25rem, 15.5vw, 6.5rem);
-        line-height: 0.86;
-        letter-spacing: -0.04em;
+        font-size: clamp(2.8rem, 14vw, 4.25rem);
+        line-height: 0.9;
+        letter-spacing: -0.06em;
         transform: none;
     }
 
     .creative-line {
         width: auto;
         white-space: normal;
-        overflow-wrap: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .creative-solid {
+        font-size: clamp(2rem, 10.5vw, 4rem);
+        white-space: nowrap;
     }
 
     .creative-outline {
@@ -5309,8 +5314,8 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 
     .site-header .nav-links a,
     .site-header .language-switch a {
-        min-height: 32px !important;
-        font-size: 0.76rem !important;
+        min-height: 36px !important;
+        font-size: 0.82rem !important;
     }
 }
 
@@ -5539,27 +5544,19 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
     }
 }
 
-/* Last-resort shared navbar sizing: override older page-specific rules. */
-body:has(.home-page) .site-header,
-body:has(.projects-page) .site-header,
-body:has(.contact-page) .site-header,
-body:has(.cv-page) .site-header,
-body:has(.project-detail-page) .site-header {
+/* Keep the shared navigation the same on every page. */
+.site-header {
     display: flex !important;
     box-sizing: border-box !important;
     width: 100% !important;
-    height: 72px !important;
-    min-height: 72px !important;
+    height: 80px !important;
+    min-height: 80px !important;
     padding: 12px clamp(20px, 4vw, 64px) !important;
     align-items: center !important;
     justify-content: flex-start !important;
 }
 
-body:has(.home-page) .site-header .navbar,
-body:has(.projects-page) .site-header .navbar,
-body:has(.contact-page) .site-header .navbar,
-body:has(.cv-page) .site-header .navbar,
-body:has(.project-detail-page) .site-header .navbar {
+.site-header .navbar {
     display: flex !important;
     flex: 0 0 auto !important;
     width: auto !important;
@@ -5569,44 +5566,29 @@ body:has(.project-detail-page) .site-header .navbar {
     padding: 0 !important;
 }
 
-body:has(.home-page) .site-header .nav-links,
-body:has(.projects-page) .site-header .nav-links,
-body:has(.contact-page) .site-header .nav-links,
-body:has(.cv-page) .site-header .nav-links,
-body:has(.project-detail-page) .site-header .nav-links {
+.site-header .nav-links {
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 0 clamp(18px, 2.4vw, 36px) !important;
+    width: auto !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-body:has(.home-page) .site-header .nav-links a,
-body:has(.projects-page) .site-header .nav-links a,
-body:has(.contact-page) .site-header .nav-links a,
-body:has(.cv-page) .site-header .nav-links a,
-body:has(.project-detail-page) .site-header .nav-links a,
-body:has(.home-page) .site-header .language-switch a,
-body:has(.projects-page) .site-header .language-switch a,
-body:has(.contact-page) .site-header .language-switch a,
-body:has(.cv-page) .site-header .language-switch a,
-body:has(.project-detail-page) .site-header .language-switch a {
+.site-header .nav-links a,
+.site-header .language-switch a {
     display: inline-flex !important;
-    min-height: 36px !important;
+    min-height: 44px !important;
     align-items: center !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 0.82rem !important;
+    font-size: 0.95rem !important;
     line-height: 1 !important;
 }
 
-body:has(.home-page) .site-header .language-switch,
-body:has(.projects-page) .site-header .language-switch,
-body:has(.contact-page) .site-header .language-switch,
-body:has(.cv-page) .site-header .language-switch,
-body:has(.project-detail-page) .site-header .language-switch {
+.site-header .language-switch {
     display: flex !important;
     align-items: center !important;
     gap: 14px !important;
@@ -5615,11 +5597,7 @@ body:has(.project-detail-page) .site-header .language-switch {
 }
 
 @media screen and (max-width: 760px) {
-    body:has(.home-page) .site-header,
-    body:has(.projects-page) .site-header,
-    body:has(.contact-page) .site-header,
-    body:has(.cv-page) .site-header,
-    body:has(.project-detail-page) .site-header {
+    .site-header {
         height: auto !important;
         min-height: 72px !important;
         flex-wrap: wrap !important;
@@ -5627,25 +5605,20 @@ body:has(.project-detail-page) .site-header .language-switch {
         padding: 10px 18px !important;
     }
 
-    body:has(.home-page) .site-header .nav-links,
-    body:has(.projects-page) .site-header .nav-links,
-    body:has(.contact-page) .site-header .nav-links,
-    body:has(.cv-page) .site-header .nav-links,
-    body:has(.project-detail-page) .site-header .nav-links {
-        gap: 0 16px !important;
+    .site-header .navbar {
+        flex: 1 1 100% !important;
+        width: 100% !important;
     }
 
-    body:has(.home-page) .site-header .nav-links a,
-    body:has(.projects-page) .site-header .nav-links a,
-    body:has(.contact-page) .site-header .nav-links a,
-    body:has(.cv-page) .site-header .nav-links a,
-    body:has(.project-detail-page) .site-header .nav-links a,
-    body:has(.home-page) .site-header .language-switch a,
-    body:has(.projects-page) .site-header .language-switch a,
-    body:has(.contact-page) .site-header .language-switch a,
-    body:has(.cv-page) .site-header .language-switch a,
-    body:has(.project-detail-page) .site-header .language-switch a {
-        min-height: 32px !important;
-        font-size: 0.76rem !important;
+    .site-header .nav-links {
+        flex-wrap: wrap !important;
+        gap: 0 16px !important;
+        width: 100% !important;
+    }
+
+    .site-header .nav-links a,
+    .site-header .language-switch a {
+        min-height: 36px !important;
+        font-size: 0.82rem !important;
     }
 }
