@@ -90,8 +90,9 @@
       </a>
   </div>
   <button class="cv-download" type="button" onclick="window.print()">
-      <?= t('cv_download') ?> ↓
+      <?= t('CV.pdf') ?> ↓
   </button>
+  <link rel="stylesheet" href="./downloads/CV.pdf">
   </div>
 
 
