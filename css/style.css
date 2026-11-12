@@ -4511,6 +4511,13 @@ body:has(.contact-page) {
         grid-template-columns: repeat(4, minmax(40px, 54px));
         gap: 14px;
     }
+    .about-details {
+        grid-template-columns: minmax(0, 1fr) 90px;
+        gap: 14px;
+    }
+    .about-photo {
+        width: 90px;
+    }
 }
 
 /* Projects page uses the same display style and palette as the homepage. */
@@ -5621,4 +5628,46 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
         min-height: 36px !important;
         font-size: 0.82rem !important;
     }
+}
+
+.about-details {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 150px;
+    align-items: center;
+    gap: 28px;
+    justify-self: stretch;
+}
+
+.about-copy nav {
+    margin-top: 24px;
+}
+
+.about-photo {
+    width: 150%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.home-page .about-stage > .about-details {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 150px;
+    align-items: center;
+    gap: 28px;
+}
+.about-copy {
+    text-align: left;
+}
+.home-page .about-copy nav .cv {
+    margin: 0;
+}
+.about-photo {
+    display: block;
+    width: 150%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: 50% 35%;
 }

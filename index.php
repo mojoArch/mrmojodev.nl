@@ -49,15 +49,19 @@ require __DIR__ . '/header.php';
 
 <p class="about-statement"><?= t('about_statement') ?></p>
 
-<p class="about-description">
-    <?= t('about_description') ?>
-</p>
-          <div>
-<nav>
-    <a class="cv" href="./cv.php">
-        <?= t('about_cv_text') ?>
-    </a>
-</nav>
+<div class="about-details">
+    <div class="about-copy">
+        <p class="about-description">
+            <?= t('about_description') ?>
+        </p>
+        <nav>
+            <a class="cv" href="./cv.php">
+                <?= t('about_cv_text') ?>
+            </a>
+        </nav>
+    </div>
+    <img src="./images/me3.jpg" class="about-photo" alt="">
+</div>
           </div>
       </div>
   </section>
