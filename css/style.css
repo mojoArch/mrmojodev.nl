@@ -4511,13 +4511,7 @@ body:has(.contact-page) {
         grid-template-columns: repeat(4, minmax(40px, 54px));
         gap: 14px;
     }
-    .about-details {
-        grid-template-columns: minmax(0, 1fr) 90px;
-        gap: 14px;
-    }
-    .about-photo {
-        width: 90px;
-    }
+
 }
 
 /* Projects page uses the same display style and palette as the homepage. */
@@ -5643,11 +5637,6 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
     margin-top: 24px;
 }
 
-.about-photo {
-    width: 150%;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
 .home-page .about-stage > .about-details {
     grid-column: 1 / -1;
     width: 100%;
@@ -5665,9 +5654,18 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 }
 .about-photo {
     display: block;
-    width: 150%;
+    width: 100%;
     height: auto;
-    aspect-ratio: auto;
-    object-fit: cover;
-    object-position: 50% 35%;
+    object-fit: contain;
+}
+
+@media (max-width: 760px) {
+    .home-page .about-stage > .about-details {
+        grid-template-columns: minmax(0, 1fr) 110px;
+        gap: 14px;
+    }
+
+    .about-photo {
+        width: 100%;
+    }
 }
