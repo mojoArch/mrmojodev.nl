@@ -1980,11 +1980,6 @@ header .navbar {
     color: #000;
 }
 
-.home-page + .site-footer .site-footer-inner {
-    padding-top: 0;
-    border-top: 0;
-}
-
 .cv-page + .site-footer,
 .projects-page + .site-footer,
 .project-detail-page + .site-footer {
@@ -4085,7 +4080,7 @@ body:has(.home-page) .site-header .language-switch a[aria-current="true"] {
     width: 100%;
     height: auto;
     aspect-ratio: 1.12 / 1;
-    border: 1px solid #ffede4;
+    border: 1px solid #ff684b;
     overflow: hidden;
 }
 
@@ -4108,6 +4103,11 @@ body:has(.home-page) .site-header .language-switch a[aria-current="true"] {
     font-weight: 900;
     letter-spacing: -0.035em;
     line-height: 1.05;
+}
+
+.home-page .project-preview-link:hover .project-name,
+.home-page .project-preview-link:focus-visible .project-name {
+    color: #ff684b;
 }
 
 .home-page .project-category,
@@ -4135,14 +4135,20 @@ body:has(.home-page) .site-header .language-switch a[aria-current="true"] {
 }
 
 .home-page .all-projects-button {
-    display: flex;
+    display: block;
     width: fit-content;
     margin: clamp(48px, 8vw, 110px) auto 0;
-    padding: 18px 28px;
-    border: 1px solid #ffede4;
-    border-radius: 999px;
-    color: #ffede4;
-    font-weight: 700;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-size: clamp(1.45rem, 2.8vw, 2.7rem);
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
 }
 
 .home-page + .site-footer {
@@ -5322,7 +5328,6 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 
 /* Shared outlined button style, based on the Play Pong reference. */
 .home-page .about-stage a.cv,
-.home-page .all-projects-button,
 .home-page .project-toggle,
 .home-page .project-website,
 .projects-page .project-toggle,
@@ -5349,8 +5354,6 @@ body:has(.contact-page) .site-header .language-switch a[aria-current="true"] {
 
 .home-page .about-stage a.cv:hover,
 .home-page .about-stage a.cv:focus-visible,
-.home-page .all-projects-button:hover,
-.home-page .all-projects-button:focus-visible,
 .home-page .project-toggle:hover,
 .home-page .project-website:hover,
 .projects-page .project-toggle:hover,

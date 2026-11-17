@@ -41,9 +41,6 @@ $projects = [
                             </span>
                         </span>
                         <span class="project-name"><?= htmlspecialchars($project['name'], ENT_QUOTES, 'UTF-8') ?></span>
-                        <span class="project-meta">
-                            <span class="project-toggle"><?= t('project_details') ?> ↗</span>
-                        </span>
                     </a>
                     <?php if (!empty($project['website'])): ?>
                         <a class="project-website" href="<?= htmlspecialchars($project['website'], ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener noreferrer">

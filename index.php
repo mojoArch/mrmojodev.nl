@@ -87,7 +87,6 @@ require __DIR__ . '/header.php';
 
                 <span class="project-info">
                     <strong class="project-name">J.VIS PHOTOGRAPHY</strong>
-                    <span class="project-toggle"><?= t('project_details') ?> ↗</span>
                 </span>
             </a>
         </article>
@@ -107,7 +106,6 @@ require __DIR__ . '/header.php';
         </span>
 
         <span class="project-name">SIGNALSHARK — IoT Radio & Aircraft Tracker</span>
-        <span class="project-details-label"><?= t('project_details') ?> ↗</span>
     </a>
  </article>
     </div>
