@@ -87,18 +87,9 @@ require __DIR__ . '/header.php';
 
                 <span class="project-info">
                     <strong class="project-name">J.VIS PHOTOGRAPHY</strong>
-                    <span class="project-type">LARAVEL — WEBSITE</span>
                     <span class="project-toggle"><?= t('project_details') ?> ↗</span>
                 </span>
             </a>
-            <a
-        class="project-website"
-        href="https://jvisfotografie-nl.onrender.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <?= t('visit_website') ?> ↗
-    </a>
         </article>
 
  <article class="project">
@@ -116,7 +107,6 @@ require __DIR__ . '/header.php';
         </span>
 
         <span class="project-name">SIGNALSHARK — IoT Radio & Aircraft Tracker</span>
-        <span class="project-category">ESP32-S3 | C++ | Python</span>
         <span class="project-details-label"><?= t('project_details') ?> ↗</span>
     </a>
  </article>
