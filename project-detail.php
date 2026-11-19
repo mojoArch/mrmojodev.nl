@@ -5,6 +5,7 @@ $projectId = $_GET['project'] ?? '';
 if (!is_string($projectId)) {
     $projectId = '';
 }
+
 $projectId = strtolower(trim($projectId));
 $projectId = preg_replace('/[^a-z0-9]/', '', $projectId);
 $projects = [
