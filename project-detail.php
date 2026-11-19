@@ -40,6 +40,7 @@ $projects = [
     ],
 ];
 
+
 if (!isset($projects[$projectId])) {
     http_response_code(404);
     $project = null;
