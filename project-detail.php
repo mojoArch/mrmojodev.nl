@@ -29,7 +29,7 @@ $projects = [
     'cyberdeck' => [
         'name' => 'Arch Linux Cyberdeck — Raspberry Pi ',
         'description' => 'cyberdeck_description',
-        'photos' => ['cyber.jpg', 'cyber1.jpg'],
+        'photos' => ['final3.JPEG', 'cyber.jpg', 'cyber1.jpg', 'design-beforecut.JPEG', 'design-aftercut.JPEG', 'final1.JPEG', 'final2.JPEG', 'final4.JPEG'],
         'technologies' => ['Raspberry Pi', 'Monitor', 'CLI/Terminal', 'Bootable USB','Arch Linux', 'Rasberry Pi OS', 'Pacman']
     ],
     'signalshark' => [

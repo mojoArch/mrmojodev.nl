@@ -7,14 +7,15 @@ $projects = [
         'id' => 'jvis', 'name' => 'J.VIS PHOTOGRAPHY', 'category' => 'LARAVEL — WEBSITE',
         'photos' => [ 'fotograaf5.jpg', 'fotograaf2.jpg', 'fotograaf3.jpg', 'fotograaf4.jpg','fotograaf1.jpg', 'fotograaf6.jpg', 'fotograaf7.jpg', 'fotograaf8.jpg']
     ],
+        [
+        'id' => 'cyberdeck', 'name' => 'Arch Linux Cyberdeck Custom — Raspberry Pi ', 'category' => 'HARDWARE — SOFTWARE OS',
+        'photos' => ['final3.JPEG','final1.JPEG', 'final2.JPEG', 'final4.JPEG', 'design-beforecut.JPEG', 'design-aftercut.JPEG', 'cyber.jpg', 'cyber1.jpg']
+    ],
     [
         'id' => 'nevanexis', 'name' => 'NevaNexis', 'category' => 'PHP — WEBSITE',
         'photos' => ['justitie2.png','justitie.jpg']
     ],
-    [
-        'id' => 'cyberdeck', 'name' => 'Arch Linux Cyberdeck — Raspberry Pi ', 'category' => 'HARDWARE — SOFTWARE OS',
-        'photos' => ['cyber.jpg', 'cyber1.jpg']
-    ],
+
     [
         'id' => 'signalshark', 'name' => 'SIGNALSHARK — IoT Radio & Aircraft Tracker',
         'category' => 'ESP32-S3 | C++ | Python',
