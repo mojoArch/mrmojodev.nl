@@ -11,16 +11,17 @@ $projects = [
         'id' => 'cyberdeck', 'name' => 'Arch Linux Cyberdeck Custom — Raspberry Pi ', 'category' => 'HARDWARE — SOFTWARE OS',
         'photos' => ['final3.JPEG','final1.JPEG', 'final2.JPEG', 'final4.JPEG', 'design-beforecut.JPEG', 'design-aftercut.JPEG', 'cyber.jpg', 'cyber1.jpg']
     ],
+        [
+        'id' => 'signalshark', 'name' => 'SIGNALSHARK — IoT Radio & Aircraft Tracker',
+        'category' => 'ESP32-S3 | C++ | Python',
+        'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6))
+    ],
     [
         'id' => 'nevanexis', 'name' => 'NevaNexis', 'category' => 'PHP — WEBSITE',
         'photos' => ['justitie2.png','justitie.jpg']
     ],
 
-    [
-        'id' => 'signalshark', 'name' => 'SIGNALSHARK — IoT Radio & Aircraft Tracker',
-        'category' => 'ESP32-S3 | C++ | Python',
-        'photos' => array_map(static fn (int $number): string => "signalshark{$number}.jpg", range(1, 6))
-    ],
+
 ];
 ?>
 <main class="projects-page">
